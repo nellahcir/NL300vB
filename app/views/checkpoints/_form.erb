@@ -1,0 +1,23 @@
+<%= error_messages_for 'checkpoint' %>
+
+<!--[form:checkpoint]-->
+<table>
+	<tr>
+			<td><label for="checkpoint_name">Name</label></td>
+			<td><%= text_field 'checkpoint', 'name'  %></td>
+	</tr>
+	<tr>
+			<td><label for="checkpoint_sequence">Sequence</label></td>
+			<td><%= text_field 'checkpoint', 'sequence'  %> <i>will be auto-assigned on create</i></td>
+	</tr>
+	<tr>
+		<td><label for="checkpont_milepost">Milepost</lable></td>
+		<td><%= text_field 'checkpoint', 'milepost' %> <i>miles from previous checkpointt</i>
+	</tr>
+	<tr>
+		<td><label for="checkpont_minrest">Min Rest</lable></td>
+		<td><%= text_field 'checkpoint', 'minrest' %> <i>minutes</i>
+	</tr>
+</table>
+	
+<!--[eoform:checkpoint]-->

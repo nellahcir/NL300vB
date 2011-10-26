@@ -1,0 +1,24 @@
+<%= error_messages_for 'checkout' %>
+
+<!--[form:checkout]-->
+<table>
+	<tr>
+			<td><label for="checkout_bib">Musher</label></td>
+			<td><%= collection_select(:checkout, :musher_id, @mushers, :id, :bibnum_with_name, :order => 'bibnum')  %></td>
+	</tr>
+	<tr>
+	  <td><label for="checkout_checkpoint_id">Checkpoint</td>
+	  <td><%= collection_select(:checkout, :checkpoint_id, @checkpoints, :id, :name, :order => 'name') %></td>
+	</tr>
+	
+	<tr>
+			<td><label for="checkout_dogs">Dogs</label></td>
+			<td><%= text_field 'checkout', 'dogs', :size => 5 %></td>
+	</tr>
+	<tr>
+			<td><label for="checkout_time">Time</label></td>
+			<td><%= datetime_select :checkout, :time %></td>
+	</tr>
+	
+</table>
+<!--[eoform:checkout]-->

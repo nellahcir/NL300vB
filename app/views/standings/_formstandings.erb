@@ -1,0 +1,59 @@
+  <table border="1">
+    <tr>
+      <th>Musher</th>
+      <th>Bib#</th>
+      <th><%= link_to "*Checkpoints", checkpoints_path %></th>
+      <th>Dogs_IN</th>
+      <th>Time_IN</th>
+      <th>Dogs_OUT</th>
+      <th>Time_OUT</th>
+      <th>Rest-time</th>
+      <th>Run-time</th>
+			<th><a href="avgspd_info.html" target="_blank">*AvgSpd</a</th>
+			<th><a href="status_info.html" target="_blank">*Status</a></th>
+    </tr>
+  <% @standings.each do |standing| %>
+    <tr>
+      <td><%= link_to standing.Musher, "standings/singlemusher/?musher=#{standing.Musher}" %></td>
+      <td align="center"><%=h standing.Bibnum %></td> 
+      <td><%=h standing.Checkpoint %></td>
+      <td align="center"><%=h standing.DogsIN %></td>
+      <% if standing.TimeIN.nil? then %>
+          <td></td>
+      <% else %>
+          <td><%=h show_date standing.TimeIN %></td>
+      <% end %>  
+      <td align="center"><%=h standing.DogsOUT %></td>
+      <% if standing.TimeOUT.nil? then %>
+          <td></td>
+      <% else %>
+          <td><%=h show_date standing.TimeOUT %></td>
+      <% end %>
+      <% if standing.RestTime.nil? then %>
+        <td></td>
+      <% else %>
+				<% restTime = standing.RestTime %>
+				<!-- rpg returns this as Time, mbp returns as String ??? -->
+				<% restTime = DateTime.parse(restTime) if restTime.class == String%>
+        <td align="center"><%=h show_time restTime %></td>
+      <% end %>
+      <% if standing.RunTime.nil? then %>
+        <td></td>
+      <% else %>
+				<% runTime = standing.RunTime %>
+				<!-- rpg returns this as Time, mbp returns as String ??? -->
+				<% runTime = DateTime.parse(runTime) if runTime.class == String %>
+        <td align="center"><%=h show_time runTime %></td>
+      <% end %>
+
+			<% if standing.speed.nil? %>
+				<td></td>
+			<% else %>
+				<td align="center"><%=h show_speed standing.speed %></td>
+			<% end %>
+			
+			<% status = @status["#{standing.Musher}"] %>
+			<td align="center"><%=h status %></td>
+    </tr>
+  <% end %>
+</table>

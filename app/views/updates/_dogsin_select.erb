@@ -1,0 +1,6 @@
+Dogs IN<br />
+<% if @dir == "in" %>
+	<%= text_field :update, :dogsin %>
+<% else %>
+	<%= text_field :update, :dogsin, :disabled => true %>
+<% end %>

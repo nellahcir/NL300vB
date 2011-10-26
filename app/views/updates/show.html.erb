@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Musher:</b>
+  <%= @update.musher_id %>
+</p>
+
+<p>
+  <b>Checkpoint:</b>
+  <%= @update.checkpoint_id %>
+</p>
+
+<p>
+  <b>Timein:</b>
+  <%= @update.timein %>
+</p>
+
+<p>
+  <b>Dogsin:</b>
+  <%= @update.dogsin %>
+</p>
+
+<p>
+  <b>Timeout:</b>
+  <%= @update.timeout %>
+</p>
+
+<p>
+  <b>Dogsout:</b>
+  <%= @update.dogsout %>
+</p>
+
+
+<%= link_to 'Edit', edit_update_path(@update) %> |
+<%= link_to 'Back', updates_path %>

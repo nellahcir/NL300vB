@@ -1,0 +1,12 @@
+<h1>Editing complex_query</h1>
+
+<%= form_for(@complex_query) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @complex_query %> |
+<%= link_to 'Back', complex_queries_path %>

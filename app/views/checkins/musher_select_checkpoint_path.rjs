@@ -1,0 +1,1 @@
+page.replace_html "checkpoint_select", :partial => "checkin_select"

@@ -1,0 +1,19 @@
+<table>
+	<tr>
+		<td>
+			<%= form_tag standings_path, :method => 'get' do %>
+				<%= text_field_tag :search, params[:search] %>
+				<%= submit_tag "Search_Bib", :musher => nil %>
+			<% end %>
+		</td>
+		<td>
+			<%= form_tag 'standings/singlecheckpoint', :method => 'post' do %>
+				<%= collection_select(:findcheckpoint, :checkpoint_id, @checkpoints, :id, :name, :order => 'name') %>
+				<%= submit_tag "List_Checkpoint" %>
+			<% end %>
+		</td>
+		<td>
+			<b><%= link_to "All_Mushers_All_Checkpoints", "standings/allmushers" %></b>
+		</td>
+	</tr>
+</table>

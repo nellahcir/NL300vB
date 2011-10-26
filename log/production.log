@@ -1,0 +1,2685 @@
+
+
+Started GET "/" for 64.4.231.24 at Tue Aug 02 09:47:20 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (3.2ms)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/login" for 64.4.231.24 at Tue Aug 02 09:47:30 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"sPZ0UiPlui0/yplEW+3VPZBHbblJ4U/TAJb/1z1hAd8=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nl300.nellahcir.com/login
+Completed 302 Found in 24ms
+
+
+Started GET "/login" for 64.4.231.24 at Tue Aug 02 09:47:30 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.4ms)
+Rendered login/index.html.erb within layouts/admin (39.7ms)
+Completed 200 OK in 68ms (Views: 65.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/login/logout" for 64.4.231.24 at Tue Aug 02 09:47:33 -0800 2011
+  Processing by LoginController#logout as HTML
+Redirected to http://nl300.nellahcir.com/login/login
+Completed 302 Found in 2ms
+
+
+Started GET "/login/login" for 64.4.231.24 at Tue Aug 02 09:47:33 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.8ms)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 64.4.231.24 at Tue Aug 02 09:48:37 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.7ms)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/login" for 64.4.231.24 at Tue Aug 02 09:49:49 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"LCdMmVgGkQ5g6SrB5jO2Y7EwdK+mUNxGNyDjYVZLVgI=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nl300.nellahcir.com/login
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 64.4.231.24 at Tue Aug 02 09:49:49 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/index.html.erb within layouts/admin (3.0ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/statuses" for 64.4.231.24 at Tue Aug 02 09:49:52 -0800 2011
+  Processing by StatusesController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered statuses/index.html.erb within layouts/admin (10.0ms)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/mushers" for 64.4.231.24 at Tue Aug 02 09:49:55 -0800 2011
+  Processing by MushersController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered mushers/index.html.erb within layouts/admin (13.3ms)
+Completed 200 OK in 136ms (Views: 132.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/standings" for 64.4.231.24 at Tue Aug 02 09:50:08 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.7ms)
+Rendered standings/_formstandings.erb (1.9ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered standings/index.erb within layouts/admin (9.4ms)
+Completed 200 OK in 53ms (Views: 17.6ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/login/logout" for 64.4.231.24 at Tue Aug 02 09:50:38 -0800 2011
+  Processing by LoginController#logout as HTML
+Redirected to http://nl300.nellahcir.com/login/login
+Completed 302 Found in 2ms
+
+
+Started GET "/login/login" for 64.4.231.24 at Tue Aug 02 09:50:38 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.5ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 64.4.231.24 at Tue Aug 02 09:50:45 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.5ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 64.4.231.24 at Tue Aug 02 09:50:49 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.5ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 64.4.231.24 at Tue Aug 02 09:51:04 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.6ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nl300" for 64.4.231.24 at Tue Aug 02 10:14:54 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (3.5ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nl300" for 64.4.231.24 at Tue Aug 02 10:15:23 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.8ms)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/nl300/login/login" for 64.4.231.24 at Tue Aug 02 10:19:54 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"l3EFE5tgYToH9qPmkRM36lfOlJ9R3NqDEl2Mjs7iXuU=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 28ms
+
+
+Started GET "/nl300/login" for 64.4.231.24 at Tue Aug 02 10:19:54 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.5ms)
+Rendered login/index.html.erb within layouts/admin (7.4ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/nl300/checkins" for 64.4.231.24 at Tue Aug 02 10:19:57 -0800 2011
+  Processing by CheckinsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkins/index.html.erb within layouts/admin (126.6ms)
+Completed 200 OK in 152ms (Views: 147.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/nl300/standings" for 64.4.231.24 at Tue Aug 02 10:20:04 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.6ms)
+Rendered standings/_formstandings.erb (1.7ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered standings/index.erb within layouts/admin (8.3ms)
+Completed 200 OK in 41ms (Views: 10.0ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/nl300/checkins/new" for 64.4.231.24 at Tue Aug 02 10:20:08 -0800 2011
+  Processing by CheckinsController#new as HTML
+Rendered checkins/_form.erb (5.0ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkins/new.html.erb within layouts/admin (66.4ms)
+Completed 200 OK in 84ms (Views: 80.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/nl300/login/list_users" for 64.4.231.24 at Tue Aug 02 10:20:12 -0800 2011
+  Processing by LoginController#list_users as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/list_users.html.erb within layouts/admin (5.4ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/nl300/login/logout" for 64.4.231.24 at Tue Aug 02 10:20:16 -0800 2011
+  Processing by LoginController#logout as HTML
+Redirected to http://nellahcir.com/nl300/login/login
+Completed 302 Found in 2ms
+
+
+Started GET "/nl300/login/login" for 64.4.231.24 at Tue Aug 02 10:20:16 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.6ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/nl300" for 64.4.231.24 at Tue Aug 02 18:41:44 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.6ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/nl300/login/login" for 64.4.231.24 at Tue Aug 02 18:41:51 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"1c0m9caAn6lmOsWxgYQgAitXi1l6EhiMAb1IO+jf2hA=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 1ms
+
+
+Started GET "/nl300/login" for 64.4.231.24 at Tue Aug 02 18:41:51 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/index.html.erb within layouts/admin (3.0ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/nl300/login/logout" for 64.4.231.24 at Tue Aug 02 18:41:56 -0800 2011
+  Processing by LoginController#logout as HTML
+Redirected to http://nellahcir.com/nl300/login/login
+Completed 302 Found in 2ms
+
+
+Started GET "/nl300/login/login" for 64.4.231.24 at Tue Aug 02 18:41:56 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.5ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/nl300/standings" for 64.4.231.24 at Tue Aug 02 18:42:04 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.3ms)
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered standings/index.erb within layouts/public (3.4ms)
+Completed 200 OK in 52ms (Views: 3.8ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/nl300/standings" for 64.4.231.24 at Tue Aug 02 18:48:16 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.6ms)
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered standings/index.erb within layouts/public (3.4ms)
+Completed 200 OK in 8ms (Views: 3.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/nl300/standings/allmushers" for 64.4.231.24 at Tue Aug 02 18:48:33 -0800 2011
+  Processing by StandingsController#allmushers as HTML
+Rendered standings/allmushers.erb within layouts/public (3.3ms)
+Completed 200 OK in 30ms (Views: 25.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/nl300/standings" for 64.4.231.24 at Tue Aug 02 19:19:50 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (2.2ms)
+Rendered standings/_formstandings.erb (3.9ms)
+Rendered standings/index.erb within layouts/public (10.2ms)
+Completed 200 OK in 118ms (Views: 46.5ms | ActiveRecord: 42.3ms)
+
+
+Started GET "/nl300/standings" for 64.4.231.24 at Tue Aug 02 20:59:27 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.5ms)
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered standings/index.erb within layouts/public (3.5ms)
+Completed 200 OK in 12ms (Views: 4.1ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/nl300/standings/singlemusher/?musher=Kaltenborn%20Magnus" for 64.4.231.24 at Tue Aug 02 20:59:37 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"musher"=>"Kaltenborn Magnus"}
+Rendered standings/_formstandings.erb (0.8ms)
+Rendered standings/singlemusher.erb within layouts/public (2.3ms)
+Completed 200 OK in 30ms (Views: 22.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/nl300/standings" for 64.4.231.24 at Tue Aug 02 20:59:41 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.2ms)
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered standings/index.erb within layouts/public (3.0ms)
+Completed 200 OK in 9ms (Views: 3.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/nl300/standings/allmushers" for 64.4.231.24 at Tue Aug 02 20:59:45 -0800 2011
+  Processing by StandingsController#allmushers as HTML
+Rendered standings/allmushers.erb within layouts/public (3.0ms)
+Completed 200 OK in 10ms (Views: 4.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/nl300/standings" for 64.4.231.24 at Tue Aug 02 20:59:52 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.4ms)
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered standings/index.erb within layouts/public (3.2ms)
+Completed 200 OK in 10ms (Views: 3.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/nl300/standings" for 66.249.67.200 at Thu Aug 04 00:18:30 -0800 2011
+  Processing by StandingsController#index as */*
+Rendered standings/_formcheckpointsearch.erb (1.6ms)
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered standings/index.erb within layouts/public (21.9ms)
+Completed 200 OK in 47ms (Views: 22.3ms | ActiveRecord: 22.1ms)
+
+
+Started GET "/nl300/standings/allmushers" for 66.249.67.200 at Thu Aug 04 02:06:59 -0800 2011
+  Processing by StandingsController#allmushers as */*
+Rendered standings/allmushers.erb within layouts/public (3.0ms)
+Completed 200 OK in 51ms (Views: 46.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/nl300/checkpoints" for 66.249.67.200 at Thu Aug 04 02:16:03 -0800 2011
+  Processing by CheckpointsController#index as */*
+Rendered checkpoints/index.html.erb within layouts/public (1.8ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nl300/avgspd_info.html" for 66.249.67.200 at Thu Aug 04 02:28:43 -0800 2011
+
+ActionController::RoutingError (No route matches "/avgspd_info.html"):
+  
+
+
+
+Started GET "/nl300/status_info.html" for 66.249.67.200 at Thu Aug 04 02:42:01 -0800 2011
+
+ActionController::RoutingError (No route matches "/status_info.html"):
+  
+
+
+
+Started GET "/nl300/standings/singlemusher/?musher=Kaltenborn%20Magnus" for 66.249.67.200 at Thu Aug 04 02:55:28 -0800 2011
+  Processing by StandingsController#singlemusher as */*
+  Parameters: {"musher"=>"Kaltenborn Magnus"}
+Rendered standings/_formstandings.erb (0.8ms)
+Rendered standings/singlemusher.erb within layouts/public (2.2ms)
+Completed 200 OK in 33ms (Views: 27.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.200 at Thu Aug 04 04:05:27 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.200 at Thu Aug 04 04:35:55 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.72.81 at Thu Aug 04 14:11:56 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.72.81 at Thu Aug 04 14:41:52 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings" for 69.58.178.56 at Thu Aug 04 17:37:41 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.5ms)
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered standings/index.erb within layouts/public (3.6ms)
+Completed 200 OK in 16ms (Views: 4.0ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.72.81 at Fri Aug 05 03:07:06 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.72.81 at Fri Aug 05 03:32:59 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings" for 195.42.102.25 at Mon Aug 08 21:02:14 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.3ms)
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered standings/index.erb within layouts/public (7.9ms)
+Completed 200 OK in 64ms (Views: 50.3ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/nl300/standings/allmushers" for 195.42.102.25 at Mon Aug 08 21:02:32 -0800 2011
+  Processing by StandingsController#allmushers as HTML
+Rendered standings/allmushers.erb within layouts/public (2.5ms)
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/nl300/checkpoints" for 195.42.102.25 at Mon Aug 08 21:02:35 -0800 2011
+  Processing by CheckpointsController#index as HTML
+Rendered checkpoints/index.html.erb within layouts/public (1.1ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nl300/avgspd_info.html" for 195.42.102.25 at Mon Aug 08 21:02:38 -0800 2011
+
+ActionController::RoutingError (No route matches "/avgspd_info.html"):
+  
+
+
+
+Started GET "/nl300/status_info.html" for 195.42.102.25 at Mon Aug 08 21:02:41 -0800 2011
+
+ActionController::RoutingError (No route matches "/status_info.html"):
+  
+
+
+
+Started GET "/nl300/standings/singlemusher/?musher=Kaltenborn%20Magnus" for 195.42.102.25 at Mon Aug 08 21:02:44 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"musher"=>"Kaltenborn Magnus"}
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered standings/singlemusher.erb within layouts/public (1.9ms)
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 195.42.102.25 at Mon Aug 08 21:03:14 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/standings/singlemusher/?musher=Kaltenborn%20Magnus" for 195.42.102.25 at Mon Aug 08 21:03:45 -0800 2011
+
+ActionController::RoutingError (No route matches "/standings/singlemusher/standings/singlemusher"):
+  
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 195.42.102.25 at Mon Aug 08 21:03:48 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.200 at Tue Aug 09 01:22:52 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.200 at Tue Aug 09 07:26:00 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.200 at Tue Aug 09 10:51:47 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings" for 66.249.67.200 at Tue Aug 09 11:58:46 -0800 2011
+  Processing by StandingsController#index as */*
+Rendered standings/_formcheckpointsearch.erb (1.4ms)
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered standings/index.erb within layouts/public (9.1ms)
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.200 at Tue Aug 09 17:10:39 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.200 at Tue Aug 09 18:04:32 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.200 at Wed Aug 10 05:07:22 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.68.131 at Thu Aug 11 08:45:18 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.68.131 at Thu Aug 11 09:36:44 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.227 at Thu Aug 11 16:58:33 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.227 at Thu Aug 11 17:56:30 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings" for 64.4.231.24 at Thu Aug 11 20:35:04 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.3ms)
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered standings/index.erb within layouts/public (20.7ms)
+Completed 200 OK in 69ms (Views: 21.3ms | ActiveRecord: 50.3ms)
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.227 at Thu Aug 11 23:03:05 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.227 at Fri Aug 12 04:56:28 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.227 at Fri Aug 12 05:51:08 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings" for 64.4.231.24 at Fri Aug 12 17:04:30 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (44.1ms)
+Rendered standings/_formstandings.erb (0.8ms)
+Rendered standings/index.erb within layouts/public (73.1ms)
+Completed 200 OK in 106ms (Views: 73.5ms | ActiveRecord: 32.6ms)
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.227 at Sat Aug 13 09:02:43 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300" for 64.4.231.24 at Sat Aug 13 10:20:26 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (2.3ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/nl300" for 64.4.231.24 at Sat Aug 13 10:22:46 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.5ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nl300/standings" for 64.4.231.24 at Sat Aug 13 10:22:56 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.5ms)
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered standings/index.erb within layouts/public (3.4ms)
+Completed 200 OK in 18ms (Views: 3.8ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.227 at Sat Aug 13 15:07:53 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 8ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.227 at Sat Aug 13 17:23:04 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.227 at Sat Aug 13 22:51:17 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.227 at Sun Aug 14 05:39:47 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.227 at Sun Aug 14 06:35:56 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.227 at Sun Aug 14 18:46:59 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings" for 95.108.217.251 at Mon Aug 15 07:41:28 -0800 2011
+  Processing by StandingsController#index as */*
+Rendered standings/_formcheckpointsearch.erb (2.2ms)
+Rendered standings/_formstandings.erb (21.0ms)
+Rendered standings/index.erb within layouts/public (34.4ms)
+Completed 200 OK in 244ms (Views: 76.7ms | ActiveRecord: 45.2ms)
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.227 at Mon Aug 15 22:31:16 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.227 at Mon Aug 15 23:15:40 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.72.206 at Tue Aug 16 05:16:26 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.72.69 at Tue Aug 16 12:17:47 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.72.69 at Tue Aug 16 16:49:00 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.72.69 at Wed Aug 17 00:09:56 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 54ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.72.69 at Wed Aug 17 01:08:30 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/checkpoints" for 66.249.71.247 at Thu Aug 18 00:14:42 -0800 2011
+  Processing by CheckpointsController#index as */*
+Rendered checkpoints/index.html.erb within layouts/public (33.8ms)
+Completed 200 OK in 129ms (Views: 68.0ms | ActiveRecord: 59.3ms)
+
+
+Started GET "/nl300/standings/allmushers" for 66.249.71.247 at Thu Aug 18 02:52:47 -0800 2011
+  Processing by StandingsController#allmushers as */*
+Rendered standings/allmushers.erb within layouts/public (37.7ms)
+Completed 200 OK in 230ms (Views: 88.9ms | ActiveRecord: 96.4ms)
+
+
+Started GET "/nl300/standings/singlemusher/?musher=Kaltenborn%20Magnus" for 66.249.67.232 at Thu Aug 18 05:29:59 -0800 2011
+  Processing by StandingsController#singlemusher as */*
+  Parameters: {"musher"=>"Kaltenborn Magnus"}
+Rendered standings/_formstandings.erb (1.9ms)
+Rendered standings/singlemusher.erb within layouts/public (4.8ms)
+Completed 200 OK in 41ms (Views: 16.1ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.232 at Thu Aug 18 11:35:13 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 61ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.232 at Thu Aug 18 18:12:22 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.232 at Thu Aug 18 23:36:33 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.232 at Fri Aug 19 05:09:42 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.232 at Fri Aug 19 12:00:12 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.232 at Fri Aug 19 12:51:38 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/status_info.html" for 95.108.217.251 at Fri Aug 19 15:55:38 -0800 2011
+
+ActionController::RoutingError (No route matches "/status_info.html"):
+  
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.232 at Sat Aug 20 18:21:28 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.232 at Sun Aug 21 01:00:52 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.232 at Sun Aug 21 06:06:38 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.232 at Sun Aug 21 11:08:14 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.232 at Sun Aug 21 17:03:35 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.232 at Sun Aug 21 22:18:50 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings" for 67.195.115.223 at Mon Aug 22 04:36:48 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (2.1ms)
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered standings/index.erb within layouts/public (33.2ms)
+Completed 200 OK in 117ms (Views: 66.5ms | ActiveRecord: 55.3ms)
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.232 at Mon Aug 22 19:47:59 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.232 at Tue Aug 23 02:06:55 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.232 at Tue Aug 23 05:40:16 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.232 at Tue Aug 23 11:35:51 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.232 at Tue Aug 23 12:21:12 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.232 at Tue Aug 23 17:43:37 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.232 at Tue Aug 23 18:29:32 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.232 at Wed Aug 24 00:00:56 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.232 at Thu Aug 25 08:51:53 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.232 at Thu Aug 25 09:39:10 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.195 at Thu Aug 25 18:52:52 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.195 at Thu Aug 25 19:39:57 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.195 at Fri Aug 26 00:40:02 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/avgspd_info.html" for 95.108.217.251 at Fri Aug 26 04:35:26 -0800 2011
+
+ActionController::RoutingError (No route matches "/avgspd_info.html"):
+  
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.195 at Fri Aug 26 06:15:23 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.195 at Fri Aug 26 07:03:03 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/checkpoints" for 95.108.217.251 at Sat Aug 27 06:47:52 -0800 2011
+  Processing by CheckpointsController#index as */*
+Rendered checkpoints/index.html.erb within layouts/public (1.3ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.72.203 at Sun Aug 28 23:32:44 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.72.203 at Mon Aug 29 01:03:58 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.72.203 at Mon Aug 29 06:30:49 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.72.203 at Mon Aug 29 12:35:31 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.72.203 at Mon Aug 29 18:27:25 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.72.203 at Tue Aug 30 00:17:02 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.72.203 at Tue Aug 30 00:55:55 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings" for 67.195.115.223 at Tue Aug 30 18:19:15 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.5ms)
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered standings/index.erb within layouts/public (46.2ms)
+Completed 200 OK in 82ms (Views: 46.6ms | ActiveRecord: 38.0ms)
+
+
+Started GET "/nl300/standings" for 66.249.67.195 at Wed Aug 31 04:28:18 -0800 2011
+  Processing by StandingsController#index as */*
+Rendered standings/_formcheckpointsearch.erb (1.3ms)
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered standings/index.erb within layouts/public (3.1ms)
+Completed 200 OK in 78ms (Views: 3.5ms | ActiveRecord: 71.9ms)
+
+
+Started GET "/nl300/standings/allmushers" for 95.108.217.251 at Thu Sep 01 05:20:55 -0800 2011
+  Processing by StandingsController#allmushers as */*
+Rendered standings/allmushers.erb within layouts/public (8.5ms)
+Completed 200 OK in 13ms (Views: 8.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.195 at Thu Sep 01 17:01:47 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.195 at Thu Sep 01 22:48:33 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.195 at Thu Sep 01 23:26:51 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.195 at Fri Sep 02 05:52:03 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.195 at Fri Sep 02 06:29:35 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.195 at Fri Sep 02 11:42:58 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.195 at Fri Sep 02 18:27:16 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.71.247 at Sat Sep 03 10:52:09 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 84ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.71.247 at Sat Sep 03 18:01:28 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.71.247 at Sat Sep 03 23:33:03 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.71.247 at Sun Sep 04 00:10:52 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.71.247 at Sun Sep 04 06:16:53 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.195 at Sun Sep 04 06:52:16 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.195 at Sun Sep 04 12:16:58 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.195 at Sun Sep 04 18:32:10 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.195 at Mon Sep 05 00:45:11 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.195 at Thu Sep 08 07:14:27 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.195 at Thu Sep 08 15:11:09 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.195 at Thu Sep 08 18:56:34 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings" for 64.4.231.24 at Fri Sep 09 12:46:33 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (63.6ms)
+Rendered standings/_formstandings.erb (34.4ms)
+Rendered standings/index.erb within layouts/public (109.2ms)
+Completed 200 OK in 430ms (Views: 181.7ms | ActiveRecord: 156.8ms)
+
+
+Started GET "/nl300/" for 64.4.231.24 at Fri Sep 09 12:46:42 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (2.5ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/nl300/login/login" for 64.4.231.24 at Fri Sep 09 12:46:48 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"uzkqMWSwmqBHRn+F6ywDqN9eIiOuKABTPwryCqie+WY=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 92ms
+
+
+Started GET "/nl300/login" for 64.4.231.24 at Fri Sep 09 12:46:48 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (19.1ms)
+Rendered login/index.html.erb within layouts/admin (24.0ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/nl300/login/list_users" for 64.4.231.24 at Fri Sep 09 12:46:52 -0800 2011
+  Processing by LoginController#list_users as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/list_users.html.erb within layouts/admin (6.0ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/nl300/login/add_user" for 64.4.231.24 at Fri Sep 09 12:46:54 -0800 2011
+  Processing by LoginController#add_user as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/add_user.html.erb within layouts/admin (143.9ms)
+Completed 200 OK in 161ms (Views: 160.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/nl300/login/add_user" for 64.4.231.24 at Fri Sep 09 12:47:11 -0800 2011
+  Processing by LoginController#add_user as HTML
+  Parameters: {"commit"=>"Add User", "authenticity_token"=>"uzkqMWSwmqBHRn+F6ywDqN9eIiOuKABTPwryCqie+WY=", "utf8"=>"✓", "user"=>{"access_level"=>"user", "name"=>"jim", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/add_user.html.erb within layouts/admin (5.5ms)
+Completed 200 OK in 100ms (Views: 6.3ms | ActiveRecord: 35.9ms)
+
+
+Started POST "/nl300/login/add_user" for 64.4.231.24 at Fri Sep 09 12:47:28 -0800 2011
+  Processing by LoginController#add_user as HTML
+  Parameters: {"commit"=>"Add User", "authenticity_token"=>"uzkqMWSwmqBHRn+F6ywDqN9eIiOuKABTPwryCqie+WY=", "utf8"=>"✓", "user"=>{"access_level"=>"user", "name"=>"jim", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"jcourtney@mta-telco.com"}}
+Redirected to http://nellahcir.com/nl300/login/list_users
+Completed 302 Found in 27ms
+
+
+Started GET "/nl300/login/list_users" for 64.4.231.24 at Fri Sep 09 12:47:28 -0800 2011
+  Processing by LoginController#list_users as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/list_users.html.erb within layouts/admin (5.9ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 24.1ms)
+
+
+Started GET "/nl300/login/logout" for 64.4.231.24 at Fri Sep 09 12:47:33 -0800 2011
+  Processing by LoginController#logout as HTML
+Redirected to http://nellahcir.com/nl300/login/login
+Completed 302 Found in 2ms
+
+
+Started GET "/nl300/login/login" for 64.4.231.24 at Fri Sep 09 12:47:33 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.7ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/nl300/login/login" for 64.4.231.24 at Fri Sep 09 12:48:39 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"jim", "commit"=>"Login", "authenticity_token"=>"uzkqMWSwmqBHRn+F6ywDqN9eIiOuKABTPwryCqie+WY=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 1ms
+
+
+Started GET "/nl300/login" for 64.4.231.24 at Fri Sep 09 12:48:39 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/index.html.erb within layouts/user (44.8ms)
+Completed 200 OK in 71ms (Views: 61.0ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/nl300/login/login" for 198.160.252.253 at Fri Sep 09 13:10:06 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.6ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/nl300/login/login" for 198.160.252.253 at Fri Sep 09 13:41:50 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"jim", "commit"=>"Login", "authenticity_token"=>"ZEgFFbOHfLG791XhdVbmSo0d1RUTYB8pgb7XF7LvN1g=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 1ms
+
+
+Started GET "/nl300/login" for 198.160.252.253 at Fri Sep 09 13:41:50 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/index.html.erb within layouts/user (2.3ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/nl300/login" for 198.160.252.253 at Fri Sep 09 13:41:57 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/index.html.erb within layouts/user (2.4ms)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/nl300/checkins" for 198.160.252.253 at Fri Sep 09 13:41:59 -0800 2011
+  Processing by CheckinsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkins/index.html.erb within layouts/user (14.7ms)
+Completed 200 OK in 60ms (Views: 56.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/nl300/checkouts" for 198.160.252.253 at Fri Sep 09 13:42:05 -0800 2011
+  Processing by CheckoutsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkouts/index.html.erb within layouts/user (12.1ms)
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/nl300/mushers" for 198.160.252.253 at Fri Sep 09 13:42:07 -0800 2011
+  Processing by MushersController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered mushers/index.html.erb within layouts/user (6.1ms)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/nl300/standings" for 198.160.252.253 at Fri Sep 09 13:42:10 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.3ms)
+Rendered standings/_formstandings.erb (0.8ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered standings/index.erb within layouts/user (4.9ms)
+Completed 200 OK in 11ms (Views: 5.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/nl300/standings" for 198.160.252.253 at Fri Sep 09 13:42:15 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (44.2ms)
+Rendered standings/_formstandings.erb (0.8ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered standings/index.erb within layouts/user (48.1ms)
+Completed 200 OK in 55ms (Views: 48.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/nl300/mushers" for 198.160.252.253 at Fri Sep 09 13:42:16 -0800 2011
+  Processing by MushersController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered mushers/index.html.erb within layouts/user (5.6ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/nl300/checkouts" for 198.160.252.253 at Fri Sep 09 13:42:18 -0800 2011
+  Processing by CheckoutsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkouts/index.html.erb within layouts/user (5.5ms)
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/nl300/checkins" for 198.160.252.253 at Fri Sep 09 13:42:21 -0800 2011
+  Processing by CheckinsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkins/index.html.erb within layouts/user (5.6ms)
+Completed 200 OK in 10ms (Views: 5.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/nl300/checkouts" for 198.160.252.253 at Fri Sep 09 13:42:27 -0800 2011
+  Processing by CheckoutsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkouts/index.html.erb within layouts/user (5.9ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/nl300/mushers" for 198.160.252.253 at Fri Sep 09 13:42:30 -0800 2011
+  Processing by MushersController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered mushers/index.html.erb within layouts/user (6.0ms)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/nl300/standings" for 198.160.252.253 at Fri Sep 09 13:42:36 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.3ms)
+Rendered standings/_formstandings.erb (0.7ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered standings/index.erb within layouts/user (4.8ms)
+Completed 200 OK in 12ms (Views: 5.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/nl300/standings/singlemusher/?musher=Kaltenborn%20Magnus" for 198.160.252.253 at Fri Sep 09 13:42:46 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"musher"=>"Kaltenborn Magnus"}
+Rendered standings/_formstandings.erb (0.8ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered standings/singlemusher.erb within layouts/user (3.8ms)
+Completed 200 OK in 30ms (Views: 25.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/nl300/standings/singlemusher/standings/singlemusher/?musher=Kaltenborn%20Magnus" for 198.160.252.253 at Fri Sep 09 13:42:48 -0800 2011
+
+ActionController::RoutingError (No route matches "/standings/singlemusher/standings/singlemusher"):
+  
+
+
+
+Started GET "/nl300/checkins" for 198.160.252.253 at Fri Sep 09 13:42:57 -0800 2011
+  Processing by CheckinsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkins/index.html.erb within layouts/user (5.9ms)
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/nl300/checkouts" for 198.160.252.253 at Fri Sep 09 13:43:01 -0800 2011
+  Processing by CheckoutsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkouts/index.html.erb within layouts/user (5.5ms)
+Completed 200 OK in 10ms (Views: 5.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/nl300/mushers" for 198.160.252.253 at Fri Sep 09 13:43:02 -0800 2011
+  Processing by MushersController#index as HTML
+Rendered layouts/_racename.html.erb (0.4ms)
+Rendered mushers/index.html.erb within layouts/user (5.5ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/nl300/standings" for 198.160.252.253 at Fri Sep 09 13:43:09 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.6ms)
+Rendered standings/_formstandings.erb (0.8ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered standings/index.erb within layouts/user (5.3ms)
+Completed 200 OK in 13ms (Views: 5.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/nl300/checkpoints" for 198.160.252.253 at Fri Sep 09 13:43:12 -0800 2011
+  Processing by CheckpointsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkpoints/index.html.erb within layouts/user (3.3ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/nl300/checkins" for 198.160.252.253 at Fri Sep 09 13:43:23 -0800 2011
+  Processing by CheckinsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkins/index.html.erb within layouts/user (5.6ms)
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/nl300/checkouts" for 198.160.252.253 at Fri Sep 09 13:43:25 -0800 2011
+  Processing by CheckoutsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkouts/index.html.erb within layouts/user (5.3ms)
+Completed 200 OK in 10ms (Views: 5.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/nl300/mushers" for 198.160.252.253 at Fri Sep 09 13:43:26 -0800 2011
+  Processing by MushersController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered mushers/index.html.erb within layouts/user (5.3ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/nl300/standings" for 198.160.252.253 at Fri Sep 09 13:43:28 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (46.4ms)
+Rendered standings/_formstandings.erb (0.8ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered standings/index.erb within layouts/user (50.1ms)
+Completed 200 OK in 56ms (Views: 50.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/nl300/standings/allmushers" for 198.160.252.253 at Fri Sep 09 13:43:30 -0800 2011
+  Processing by StandingsController#allmushers as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered standings/allmushers.erb within layouts/user (4.4ms)
+Completed 200 OK in 46ms (Views: 21.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/nl300/login" for 64.4.231.24 at Fri Sep 09 19:57:20 -0800 2011
+  Processing by LoginController#index as HTML
+Redirected to http://nellahcir.com/nl300/login/login
+Completed 302 Found in 1ms
+
+
+Started GET "/nl300/login/login" for 64.4.231.24 at Fri Sep 09 19:57:20 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (2.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/nl300/login/login" for 64.4.231.24 at Sat Sep 10 13:40:04 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.8ms)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.195 at Sun Sep 11 02:01:27 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.195 at Sun Sep 11 08:25:30 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.195 at Sun Sep 11 13:59:23 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.195 at Sun Sep 11 19:00:09 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.195 at Mon Sep 12 03:03:03 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 1ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/avgspd_info.html" for 67.195.115.223 at Tue Sep 13 06:21:23 -0800 2011
+
+ActionController::RoutingError (No route matches "/avgspd_info.html"):
+  
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.195 at Tue Sep 13 21:10:26 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 29ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.195 at Wed Sep 14 01:27:38 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/status_info.html" for 66.249.67.195 at Wed Sep 14 07:14:16 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"status_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300/standings/singlemusher/avgspd_info.html" for 66.249.67.195 at Wed Sep 14 08:46:54 -0800 2011
+  Processing by StandingsController#singlemusher as HTML
+  Parameters: {"id"=>"avgspd_info"}
+Completed   in 2ms
+
+NoMethodError (undefined method `bibnum' for nil:NilClass):
+  app/controllers/standings_controller.rb:99:in `generateStatus'
+  app/controllers/standings_controller.rb:28:in `singlemusher'
+
+
+
+Started GET "/nl300" for 216.137.226.160 at Sun Sep 18 15:39:43 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (26.5ms)
+Completed 200 OK in 78ms (Views: 78.1ms | ActiveRecord: 30.0ms)
+
+
+Started POST "/nl300/login/login" for 216.137.226.160 at Sun Sep 18 15:40:00 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"saHf9E7Y+V1UJvXa4JTtnsYDzofgwBh9PabQO/jkOVk=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 215ms
+
+
+Started GET "/nl300/login" for 216.137.226.160 at Sun Sep 18 15:40:00 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (9.6ms)
+Rendered login/index.html.erb within layouts/admin (82.3ms)
+Completed 200 OK in 110ms (Views: 108.2ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/nl300/login" for 64.4.231.24 at Sun Sep 18 17:01:01 -0800 2011
+  Processing by LoginController#index as HTML
+Redirected to http://nellahcir.com/nl300/login/login
+Completed 302 Found in 1ms
+
+
+Started GET "/nl300/login/login" for 64.4.231.24 at Sun Sep 18 17:01:01 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (62.4ms)
+Completed 200 OK in 63ms (Views: 62.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nl300" for 192.168.1.158 at Mon Sep 26 10:04:30 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (26.3ms)
+Completed 200 OK in 114ms (Views: 113.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/nl300/login/login" for 192.168.1.158 at Mon Sep 26 10:04:42 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"todr99zWiy6ee+SW9BWagmOXlQjeXgKa97R4W6l8hbk=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://192.168.1.158/nl300/login
+Completed 302 Found in 129ms
+
+
+Started GET "/nl300/login" for 192.168.1.158 at Mon Sep 26 10:04:42 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.5ms)
+Rendered login/index.html.erb within layouts/admin (40.8ms)
+Completed 200 OK in 84ms (Views: 61.4ms | ActiveRecord: 49.3ms)
+
+
+Started GET "/nl300/login/logout" for 192.168.1.158 at Mon Sep 26 10:04:46 -0800 2011
+  Processing by LoginController#logout as HTML
+Redirected to http://192.168.1.158/nl300/login/login
+Completed 302 Found in 126ms
+
+
+Started GET "/nl300/login/login" for 192.168.1.158 at Mon Sep 26 10:04:46 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.5ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/nl300/" for 192.168.1.4 at Mon Sep 26 20:00:25 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (4.9ms)
+Completed 200 OK in 5ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nl300/" for 192.168.1.158 at Mon Oct 03 17:25:40 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (25.9ms)
+Completed 200 OK in 107ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/nl300/login/login" for 192.168.1.158 at Mon Oct 03 17:25:49 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"hcir", "commit"=>"Login", "authenticity_token"=>"hkuVgc9lx/WecxDn1ByoWry0MNt2qZVXxlNgXyBrRvI=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 66ms
+
+
+Started GET "/nl300/login" for 192.168.1.158 at Mon Oct 03 17:25:49 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.4ms)
+Rendered login/index.html.erb within layouts/user (38.6ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 17.3ms)
+
+
+Started GET "/nl300/checkins" for 192.168.1.158 at Mon Oct 03 17:25:52 -0800 2011
+  Processing by CheckinsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkins/index.html.erb within layouts/user (22.2ms)
+Completed 200 OK in 104ms (Views: 63.2ms | ActiveRecord: 38.3ms)
+
+
+Started GET "/nl300/mushers" for 192.168.1.158 at Mon Oct 03 17:25:59 -0800 2011
+  Processing by MushersController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered mushers/index.html.erb within layouts/user (11.4ms)
+Completed 200 OK in 41ms (Views: 18.9ms | ActiveRecord: 20.4ms)
+
+
+Started GET "/nl300/checkins" for 192.168.1.158 at Mon Oct 03 17:26:01 -0800 2011
+  Processing by CheckinsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkins/index.html.erb within layouts/user (5.6ms)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/nl300/checkins?utf8=%E2%9C%93&search=1&commit=Search_Bib" for 192.168.1.158 at Mon Oct 03 17:26:07 -0800 2011
+  Processing by CheckinsController#index as HTML
+  Parameters: {"commit"=>"Search_Bib", "utf8"=>"✓", "search"=>"1"}
+Rendered checkins/index.html.erb within layouts/user (32.3ms)
+Completed   in 36ms
+
+ActionView::Template::Error (undefined method `total_pages' for #<Array:0x110451f80>):
+    36: </table>
+    37: 
+    38: <br />
+    39: <%= will_paginate @checkins %>
+  app/views/checkins/index.html.erb:39:in `_app_views_checkins_index_html_erb___1512814693_2284975480_0'
+  app/controllers/checkins_controller.rb:22:in `index'
+
+
+
+Started GET "/nl300/mushers" for 192.168.1.158 at Mon Oct 03 17:26:14 -0800 2011
+  Processing by MushersController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered mushers/index.html.erb within layouts/user (46.6ms)
+Completed 200 OK in 49ms (Views: 46.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/nl300/checkins" for 192.168.1.158 at Mon Oct 03 17:26:19 -0800 2011
+  Processing by CheckinsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkins/index.html.erb within layouts/user (5.9ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/nl300/checkins/new" for 192.168.1.158 at Mon Oct 03 17:26:25 -0800 2011
+  Processing by CheckinsController#new as HTML
+Rendered checkins/_form.erb (4.8ms)
+Rendered layouts/_racename.html.erb (0.1ms)
+Rendered checkins/new.html.erb within layouts/user (65.8ms)
+Completed 200 OK in 78ms (Views: 74.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/nl300/checkins" for 192.168.1.158 at Mon Oct 03 17:26:42 -0800 2011
+  Processing by CheckinsController#create as HTML
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"hkuVgc9lx/WecxDn1ByoWry0MNt2qZVXxlNgXyBrRvI=", "utf8"=>"✓", "checkin"=>{"time(1i)"=>"2011", "time(2i)"=>"6", "dogs"=>"16", "time(3i)"=>"27", "time(4i)"=>"17", "time(5i)"=>"26", "musher_id"=>"2", "checkpoint_id"=>"1"}}
+Redirected to http://nellahcir.com/nl300/standings
+Completed 302 Found in 32ms
+
+
+Started GET "/nl300/standings" for 192.168.1.158 at Mon Oct 03 17:26:42 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (2.0ms)
+Rendered standings/_formstandings.erb (1.9ms)
+Rendered layouts/_racename.html.erb (0.4ms)
+Rendered standings/index.erb within layouts/user (9.3ms)
+Completed 200 OK in 49ms (Views: 18.5ms | ActiveRecord: 19.8ms)
+
+
+Started GET "/nl300/standings?utf8=%E2%9C%93&search=2&commit=Search_Bib" for 192.168.1.158 at Mon Oct 03 17:26:51 -0800 2011
+  Processing by StandingsController#index as HTML
+  Parameters: {"commit"=>"Search_Bib", "utf8"=>"✓", "search"=>"2"}
+Rendered standings/_formcheckpointsearch.erb (1.6ms)
+Rendered standings/_formstandings.erb (0.8ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered standings/index.erb within layouts/user (5.6ms)
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/nl300" for 192.168.1.4 at Tue Oct 04 17:05:47 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (2.3ms)
+Completed 200 OK in 55ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nl300/" for 192.168.1.4 at Sun Oct 09 13:58:23 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (2.9ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/nl300/login/login" for 192.168.1.4 at Sun Oct 09 13:58:30 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"hcir", "commit"=>"Login", "authenticity_token"=>"Fb3beeDE6+icW1a+zAqSMBvKY7c+IYXM+u0WbvtPQlI=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 74ms
+
+
+Started GET "/nl300/login" for 192.168.1.4 at Sun Oct 09 13:58:30 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.5ms)
+Rendered login/index.html.erb within layouts/user (28.6ms)
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 43.7ms)
+
+
+Started GET "/nl300/checkins" for 192.168.1.4 at Sun Oct 09 13:58:44 -0800 2011
+  Processing by CheckinsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkins/index.html.erb within layouts/user (23.4ms)
+Completed 200 OK in 50ms (Views: 45.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/nl300/login/logout" for 192.168.1.4 at Sun Oct 09 13:58:54 -0800 2011
+  Processing by LoginController#logout as HTML
+Redirected to http://nellahcir.com/nl300/login/login
+Completed 302 Found in 2ms
+
+
+Started GET "/nl300/login/login" for 192.168.1.4 at Sun Oct 09 13:58:54 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.6ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/nl300/login/login" for 192.168.1.4 at Sun Oct 09 13:59:00 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"Fb3beeDE6+icW1a+zAqSMBvKY7c+IYXM+u0WbvtPQlI=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 1ms
+
+
+Started GET "/nl300/login" for 192.168.1.4 at Sun Oct 09 13:59:00 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/index.html.erb within layouts/admin (3.7ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/nl300/checkpoints" for 192.168.1.4 at Sun Oct 09 13:59:04 -0800 2011
+  Processing by CheckpointsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkpoints/index.html.erb within layouts/admin (7.7ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/nl300/checkpoints/1/edit" for 192.168.1.4 at Sun Oct 09 13:59:14 -0800 2011
+  Processing by CheckpointsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Rendered checkpoints/_form.erb (1.0ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkpoints/edit.html.erb within layouts/admin (102.4ms)
+Completed 200 OK in 123ms (Views: 121.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/nl300/checkpoints/1" for 192.168.1.4 at Sun Oct 09 13:59:30 -0800 2011
+  Processing by CheckpointsController#update as HTML
+  Parameters: {"commit"=>"Update", "checkpoint"=>{"name"=>"Happy Trails", "sequence"=>"1", "milepost"=>"0", "minrest"=>"0"}, "authenticity_token"=>"Fb3beeDE6+icW1a+zAqSMBvKY7c+IYXM+u0WbvtPQlI=", "utf8"=>"✓", "id"=>"1"}
+Redirected to http://nellahcir.com/nl300/checkpoints
+Completed 302 Found in 22ms
+
+
+Started GET "/nl300/checkpoints" for 192.168.1.4 at Sun Oct 09 13:59:30 -0800 2011
+  Processing by CheckpointsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkpoints/index.html.erb within layouts/admin (7.2ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/nl300/login/login" for 192.168.1.4 at Mon Oct 10 20:46:47 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (5.0ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/nl300/login/login" for 192.168.1.4 at Mon Oct 10 20:46:52 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"w0ICTmgeudo7vfpRDuc40SchZULxrKPfibvGufFkPW0=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 1ms
+
+
+Started GET "/nl300/login" for 192.168.1.4 at Mon Oct 10 20:46:52 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (22.4ms)
+Rendered login/index.html.erb within layouts/admin (25.4ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/nl300/checkpoints" for 192.168.1.4 at Mon Oct 10 20:46:55 -0800 2011
+  Processing by CheckpointsController#index as HTML
+Rendered layouts/_racename.html.erb (0.4ms)
+Rendered checkpoints/index.html.erb within layouts/admin (7.1ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/nl300/checkpoints/6/edit" for 192.168.1.4 at Mon Oct 10 20:46:58 -0800 2011
+  Processing by CheckpointsController#edit as HTML
+  Parameters: {"id"=>"6"}
+Rendered checkpoints/_form.erb (0.6ms)
+Rendered layouts/_racename.html.erb (0.1ms)
+Rendered checkpoints/edit.html.erb within layouts/admin (5.2ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/nl300/checkpoints/6" for 192.168.1.4 at Mon Oct 10 20:47:11 -0800 2011
+  Processing by CheckpointsController#update as HTML
+  Parameters: {"commit"=>"Update", "checkpoint"=>{"name"=>"Happy Trails (finish)", "sequence"=>"6", "milepost"=>"300", "minrest"=>"0"}, "authenticity_token"=>"w0ICTmgeudo7vfpRDuc40SchZULxrKPfibvGufFkPW0=", "utf8"=>"✓", "id"=>"6"}
+Redirected to http://nellahcir.com/nl300/checkpoints
+Completed 302 Found in 6ms
+
+
+Started GET "/nl300/checkpoints" for 192.168.1.4 at Mon Oct 10 20:47:12 -0800 2011
+  Processing by CheckpointsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkpoints/index.html.erb within layouts/admin (6.9ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/nl300/checkpoints/2/edit" for 192.168.1.4 at Mon Oct 10 20:47:25 -0800 2011
+  Processing by CheckpointsController#edit as HTML
+  Parameters: {"id"=>"2"}
+Rendered checkpoints/_form.erb (0.6ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkpoints/edit.html.erb within layouts/admin (5.1ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/nl300/checkpoints/2" for 192.168.1.4 at Mon Oct 10 20:47:38 -0800 2011
+  Processing by CheckpointsController#update as HTML
+  Parameters: {"commit"=>"Update", "checkpoint"=>{"name"=>"Yentna Station (1)", "sequence"=>"2", "milepost"=>"75", "minrest"=>"0"}, "authenticity_token"=>"w0ICTmgeudo7vfpRDuc40SchZULxrKPfibvGufFkPW0=", "utf8"=>"✓", "id"=>"2"}
+Redirected to http://nellahcir.com/nl300/checkpoints
+Completed 302 Found in 6ms
+
+
+Started GET "/nl300/checkpoints" for 192.168.1.4 at Mon Oct 10 20:47:38 -0800 2011
+  Processing by CheckpointsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkpoints/index.html.erb within layouts/admin (6.9ms)
+Completed 200 OK in 51ms (Views: 7.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/nl300/checkpoints/3/edit" for 192.168.1.4 at Mon Oct 10 20:47:40 -0800 2011
+  Processing by CheckpointsController#edit as HTML
+  Parameters: {"id"=>"3"}
+Rendered checkpoints/_form.erb (0.6ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkpoints/edit.html.erb within layouts/admin (4.8ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/nl300/checkpoints/3" for 192.168.1.4 at Mon Oct 10 20:47:47 -0800 2011
+  Processing by CheckpointsController#update as HTML
+  Parameters: {"commit"=>"Update", "checkpoint"=>{"name"=>"Finger Lake", "sequence"=>"3", "milepost"=>"125", "minrest"=>"0"}, "authenticity_token"=>"w0ICTmgeudo7vfpRDuc40SchZULxrKPfibvGufFkPW0=", "utf8"=>"✓", "id"=>"3"}
+Redirected to http://nellahcir.com/nl300/checkpoints
+Completed 302 Found in 6ms
+
+
+Started GET "/nl300/checkpoints" for 192.168.1.4 at Mon Oct 10 20:47:47 -0800 2011
+  Processing by CheckpointsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkpoints/index.html.erb within layouts/admin (7.2ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/nl300/checkpoints/4/edit" for 192.168.1.4 at Mon Oct 10 20:47:50 -0800 2011
+  Processing by CheckpointsController#edit as HTML
+  Parameters: {"id"=>"4"}
+Rendered checkpoints/_form.erb (0.6ms)
+Rendered layouts/_racename.html.erb (0.1ms)
+Rendered checkpoints/edit.html.erb within layouts/admin (4.7ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/nl300/checkpoints/4" for 192.168.1.4 at Mon Oct 10 20:48:00 -0800 2011
+  Processing by CheckpointsController#update as HTML
+  Parameters: {"commit"=>"Update", "checkpoint"=>{"name"=>"Yentna Station (2)", "sequence"=>"4", "milepost"=>"175", "minrest"=>"0"}, "authenticity_token"=>"w0ICTmgeudo7vfpRDuc40SchZULxrKPfibvGufFkPW0=", "utf8"=>"✓", "id"=>"4"}
+Redirected to http://nellahcir.com/nl300/checkpoints
+Completed 302 Found in 5ms
+
+
+Started GET "/nl300/checkpoints" for 192.168.1.4 at Mon Oct 10 20:48:00 -0800 2011
+  Processing by CheckpointsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkpoints/index.html.erb within layouts/admin (6.8ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/nl300/checkpoint/destroy/5" for 192.168.1.4 at Mon Oct 10 20:48:17 -0800 2011
+
+ActionController::RoutingError (No route matches "/checkpoint/destroy/5"):
+  
+
+
+
+Started GET "/nl300/checkpoints" for 192.168.1.4 at Mon Oct 10 20:49:30 -0800 2011
+  Processing by CheckpointsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkpoints/index.html.erb within layouts/admin (6.1ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/nl300/checkins" for 192.168.1.4 at Mon Oct 10 20:49:47 -0800 2011
+  Processing by CheckinsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkins/index.html.erb within layouts/admin (51.3ms)
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/nl300/checkins/1" for 192.168.1.4 at Mon Oct 10 20:49:52 -0800 2011
+  Processing by CheckinsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 0ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+
+
+
+Started GET "/nl300/checkins" for 192.168.1.4 at Mon Oct 10 20:50:37 -0800 2011
+  Processing by CheckinsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkins/index.html.erb within layouts/admin (7.6ms)
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/nl300/checkouts" for 192.168.1.4 at Mon Oct 10 20:50:51 -0800 2011
+  Processing by CheckoutsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkouts/index.html.erb within layouts/admin (12.4ms)
+Completed 200 OK in 61ms (Views: 56.2ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/nl300/checkouts/1" for 192.168.1.4 at Mon Oct 10 20:50:58 -0800 2011
+  Processing by CheckoutsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 0ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+
+
+
+Started GET "/nl300/" for 192.168.1.4 at Mon Oct 10 20:52:19 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.6ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/nl300/login/login" for 192.168.1.4 at Mon Oct 10 20:52:26 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"w0ICTmgeudo7vfpRDuc40SchZULxrKPfibvGufFkPW0=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 1ms
+
+
+Started GET "/nl300/login" for 192.168.1.4 at Mon Oct 10 20:52:26 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/index.html.erb within layouts/admin (3.1ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/nl300/checkouts" for 192.168.1.4 at Mon Oct 10 20:52:30 -0800 2011
+  Processing by CheckoutsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkouts/index.html.erb within layouts/admin (6.2ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/nl300/checkouts/1" for 192.168.1.4 at Mon Oct 10 20:52:34 -0800 2011
+  Processing by CheckoutsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 0ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+
+
+
+Started GET "/nl300/" for 192.168.1.4 at Mon Oct 10 21:12:32 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (2.4ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/nl300/login/login" for 192.168.1.4 at Mon Oct 10 21:12:41 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"w0ICTmgeudo7vfpRDuc40SchZULxrKPfibvGufFkPW0=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 28ms
+
+
+Started GET "/nl300/login" for 192.168.1.4 at Mon Oct 10 21:12:41 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.7ms)
+Rendered login/index.html.erb within layouts/admin (17.7ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/nl300/checkins" for 192.168.1.4 at Mon Oct 10 21:12:45 -0800 2011
+  Processing by CheckinsController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered checkins/index.html.erb within layouts/admin (5.6ms)
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/nl300/checkouts" for 192.168.1.4 at Mon Oct 10 21:12:47 -0800 2011
+  Processing by CheckoutsController#index as HTML
+Completed   in 3ms
+
+NoMethodError (undefined method `paginate' for []:Array):
+  app/controllers/checkouts_controller.rb:18:in `index'
+
+
+
+Started GET "/nl300/checkouts" for 192.168.1.4 at Mon Oct 10 21:34:07 -0800 2011
+  Processing by CheckoutsController#index as HTML
+Redirected to http://nellahcir.com/nl300/login/login
+Completed 302 Found in 1ms
+
+
+Started GET "/nl300/login/login" for 192.168.1.4 at Mon Oct 10 21:34:07 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.7ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/nl300/login/login" for 192.168.1.4 at Sat Oct 22 00:02:37 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (3.2ms)
+Completed 200 OK in 30ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nl300/javascripts/jquery.js" for 192.168.1.4 at Sat Oct 22 00:02:37 -0800 2011
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery.js"):
+  
+
+
+
+Started GET "/nl300/javascripts/jquery_ujs.js" for 192.168.1.4 at Sat Oct 22 00:02:37 -0800 2011
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery_ujs.js"):
+  
+
+
+
+Started GET "/nl300/login/login" for 192.168.1.4 at Sat Oct 22 00:02:51 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (2.5ms)
+Completed 200 OK in 15ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nl300/javascripts/jquery.js" for 192.168.1.4 at Sat Oct 22 00:02:51 -0800 2011
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery.js"):
+  
+
+
+
+Started GET "/nl300/javascripts/jquery_ujs.js" for 192.168.1.4 at Sat Oct 22 00:02:51 -0800 2011
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery_ujs.js"):
+  
+
+
+
+Started GET "/nl300/login/login" for 192.168.1.4 at Sat Oct 22 00:03:21 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.5ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nl300/javascripts/jquery.js" for 192.168.1.4 at Sat Oct 22 00:03:21 -0800 2011
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery.js"):
+  
+
+
+
+Started GET "/nl300/javascripts/jquery_ujs.js" for 192.168.1.4 at Sat Oct 22 00:03:21 -0800 2011
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery_ujs.js"):
+  
+
+
+
+Started GET "/nl300/login/login" for 192.168.1.4 at Sat Oct 22 00:06:51 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (2.6ms)
+Completed 200 OK in 15ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nl300/javascripts/jquery.js" for 192.168.1.4 at Sat Oct 22 00:06:51 -0800 2011
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery.js"):
+  
+
+
+
+Started GET "/nl300/javascripts/jquery_ujs.js" for 192.168.1.4 at Sat Oct 22 00:06:51 -0800 2011
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery_ujs.js"):
+  
+
+
+
+Started GET "/nl300/login/login" for 192.168.1.4 at Sat Oct 22 00:10:14 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (2.4ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/nl300/login/login" for 192.168.1.4 at Sat Oct 22 00:10:22 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"WnwDlrDuTDdGGqVDHSx9F55Oa7X/hwXjsKAptXfoOIk=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 116ms
+
+
+Started GET "/nl300/login" for 192.168.1.4 at Sat Oct 22 00:10:22 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.4ms)
+Rendered login/index.html.erb within layouts/admin (42.2ms)
+Completed 200 OK in 65ms (Views: 61.5ms | ActiveRecord: 41.8ms)
+
+
+Started GET "/nl300/standings" for 192.168.1.4 at Sat Oct 22 00:10:44 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.9ms)
+Rendered standings/_formstandings.erb (2.0ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered standings/index.erb within layouts/admin (16.5ms)
+Completed 200 OK in 208ms (Views: 41.0ms | ActiveRecord: 87.6ms)
+
+
+Started GET "/nl300/login/logout" for 192.168.1.4 at Sat Oct 22 00:11:14 -0800 2011
+  Processing by LoginController#logout as HTML
+Redirected to http://nellahcir.com/nl300/login/login
+Completed 302 Found in 2ms
+
+
+Started GET "/nl300/login/login" for 192.168.1.4 at Sat Oct 22 00:11:14 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.6ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/nl300/standings" for 192.168.1.4 at Sat Oct 22 00:13:12 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.3ms)
+Rendered standings/_formstandings.erb (1.1ms)
+Rendered standings/index.erb within layouts/public (3.7ms)
+Completed 200 OK in 13ms (Views: 4.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/nl300/standings/allmushers" for 192.168.1.4 at Sat Oct 22 00:13:29 -0800 2011
+  Processing by StandingsController#allmushers as HTML
+Rendered standings/allmushers.erb within layouts/public (46.6ms)
+Completed 200 OK in 67ms (Views: 61.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/nl300/standings" for 192.168.1.4 at Sat Oct 22 00:13:36 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.2ms)
+Rendered standings/_formstandings.erb (1.1ms)
+Rendered standings/index.erb within layouts/public (3.5ms)
+Completed 200 OK in 11ms (Views: 3.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/nl300/standings/allmushers" for 192.168.1.4 at Sat Oct 22 00:13:39 -0800 2011
+  Processing by StandingsController#allmushers as HTML
+Rendered standings/allmushers.erb within layouts/public (6.5ms)
+Completed 200 OK in 13ms (Views: 6.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/nl300/standings" for 192.168.1.4 at Sat Oct 22 00:13:47 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.2ms)
+Rendered standings/_formstandings.erb (1.0ms)
+Rendered standings/index.erb within layouts/public (3.5ms)
+Completed 200 OK in 12ms (Views: 3.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/nl300/" for 192.168.1.158 at Sat Oct 22 13:00:52 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.8ms)
+Completed 200 OK in 2ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/nl300/login/login" for 192.168.1.158 at Sat Oct 22 13:01:07 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"MCeYXGX0RpsaSZdGJ3U2C2/SnWyqlkiqu2zJ0n2SGl4=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 1ms
+
+
+Started GET "/nl300/login" for 192.168.1.158 at Sat Oct 22 13:01:07 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/index.html.erb within layouts/admin (3.4ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/nl300/login/list_users" for 192.168.1.158 at Sat Oct 22 13:01:20 -0800 2011
+  Processing by LoginController#list_users as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/list_users.html.erb within layouts/admin (5.7ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/nl300/login/logout" for 192.168.1.158 at Sat Oct 22 13:01:33 -0800 2011
+  Processing by LoginController#logout as HTML
+Redirected to http://nellahcir.com/nl300/login/login
+Completed 302 Found in 2ms
+
+
+Started GET "/nl300/login/login" for 192.168.1.158 at Sat Oct 22 13:01:33 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.8ms)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/nl300" for 192.168.1.4 at Sat Oct 22 21:01:52 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.7ms)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nl300" for 192.168.1.4 at Sat Oct 22 21:07:19 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.8ms)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/nl300" for 192.168.1.4 at Sat Oct 22 21:54:49 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.6ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/nl300/login/login" for 192.168.1.4 at Sat Oct 22 21:54:54 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"udnBGKo7MR9YDPoz9oNnDtuINkkyvuffNnPGTLkAgZs=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 1ms
+
+
+Started GET "/nl300/login" for 192.168.1.4 at Sat Oct 22 21:54:54 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/index.html.erb within layouts/admin (3.0ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/nl300/mushers" for 192.168.1.4 at Sat Oct 22 21:54:58 -0800 2011
+  Processing by MushersController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered mushers/index.html.erb within layouts/admin (50.8ms)
+Completed 200 OK in 56ms (Views: 52.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/nl300/standings" for 192.168.1.4 at Sat Oct 22 21:55:02 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.2ms)
+Rendered standings/_formstandings.erb (1.1ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered standings/index.erb within layouts/admin (5.8ms)
+Completed 200 OK in 16ms (Views: 6.5ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/nl300/login/logout" for 192.168.1.4 at Sat Oct 22 21:55:18 -0800 2011
+  Processing by LoginController#logout as HTML
+Redirected to http://nellahcir.com/nl300/login/login
+Completed 302 Found in 2ms
+
+
+Started GET "/nl300/login/login" for 192.168.1.4 at Sat Oct 22 21:55:18 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.6ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/nl300" for 192.168.1.4 at Sun Oct 23 12:31:52 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.9ms)
+Completed 200 OK in 2ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/nl300/login/login" for 192.168.1.4 at Sun Oct 23 12:32:02 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"rlOo10wXNPpjBIjcZKJ0HwdjpDFmee1y4U17M5VprPE=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+Redirected to http://nellahcir.com/nl300/login
+Completed 302 Found in 1ms
+
+
+Started GET "/nl300/login" for 192.168.1.4 at Sun Oct 23 12:32:02 -0800 2011
+  Processing by LoginController#index as HTML
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered login/index.html.erb within layouts/admin (3.0ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/nl300/standings" for 192.168.1.4 at Sun Oct 23 12:32:12 -0800 2011
+  Processing by StandingsController#index as HTML
+Rendered standings/_formcheckpointsearch.erb (1.5ms)
+Rendered standings/_formstandings.erb (1.1ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Rendered standings/index.erb within layouts/admin (6.2ms)
+Completed 200 OK in 19ms (Views: 6.9ms | ActiveRecord: 7.4ms)

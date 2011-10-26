@@ -1,0 +1,34 @@
+<%= error_messages_for 'musher' %>
+
+<!--[form:musher]-->
+<table>
+  <tr>
+    <td><label for="musher_name">Name</label>
+    <td><%= text_field 'musher', 'name' %></td>
+  </tr>
+  <tr>
+    <td><label for="musher_bibnum">Bib #</label>
+    <td><%= text_field 'musher', 'bibnum', :size => "3" %></td>
+  </tr>
+  <tr>
+    <td><label for="musher_stpos">Start Pos:</label>
+    <td><%= text_field 'musher', 'stpos', :size => "3" %></td>
+  </tr>
+  <tr>
+    <td><label for="musher_dogs">Num Dogs</label>
+    <td><%= text_field 'musher', 'dogs', :size => "3" %></td>
+  </tr>
+  <tr>
+    <td><label for="musher_year">Year</label>
+    <td><%= text_field 'musher', 'year', :size => "5" %> <i>YYYY</i></td>
+  </tr>
+  <tr>
+	  <td><label for="musher_status_id">Status</td>
+	  <td><%= collection_select(:musher, :status_id, @statuses, :id, :name, :order => 'name') %></td>
+	</tr>
+	<tr>
+		<td><label for="musher_restartdiff">Restart Diff</td>
+	  <td><%= text_field 'musher', 'restartdiff', :size => "3" %> <i>minutes</i></td>
+	</tr>
+</table>
+<!--[eoform:musher]-->

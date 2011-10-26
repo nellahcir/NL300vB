@@ -1,0 +1,6 @@
+Time OUT<br />
+<% if @dir == "out" %>
+	<%= datetime_select :update, :timeout %>
+<% else %>
+	<%= datetime_select :update, :timeout, :disabled => true %>
+<% end %>

@@ -1,0 +1,126 @@
+/* Global styles */
+
+/* START:notice */
+#notice {
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+/* END:notice */
+
+/* Styles for main page */
+
+#bannergraphics {
+  /* background: #000D63; */
+  background: #1F477B;
+	float: left;
+  padding-top: 2px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  color: #FFF;
+	width: 10em;
+}
+
+#banner {
+  /* background: #000D63; */
+  background: #1F477B;
+  margin-left: 0em;
+  padding-top: 0px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: #FFF;
+  text-align: center;
+}
+
+#banner img {
+  float: left;
+}
+
+
+#columns {
+  /* background: #F7CA28; */
+  background: #1F477B;
+}
+
+#main {
+  margin-left: 6em;
+  padding-top: 1ex;
+  padding-left: 1em;
+  background: white;
+}
+
+#standings_only {
+  margin-left: 0em;
+  padding-top: 4ex;
+  padding-left: 2em;
+  background: white;
+}
+
+#side {
+  float: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  width: 5em;
+  /* background: #F7CA28; */
+  background: #1F477B;
+}
+
+#side a {
+  float: left;
+  font-size: small;
+  color: #FFF;
+}
+
+h1 {
+  font:  125% sans-serif;
+  color: #226;
+  border-bottom: 2px dotted #77d;
+}
+
+h3 {
+	font:  50% sans-serif;
+	color: #226;
+	
+}
+
+/* The error box */
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}

@@ -1,0 +1,3 @@
+Checkpoiint<br />
+<%= observe_field :update_musher_id, :url => 'musher_select_checkpoint', :with=>"update_musher_id" %>
+<%= collection_select(:update, :checkpoint_id, @checkpoints, :id, :name, :order => 'sequence') %>

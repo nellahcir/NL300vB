@@ -1,0 +1,30 @@
+<h1>Listing mushers</h1>
+
+<table>
+  <tr>
+    <th><%= link_to "Name", mushers_path(:order => 'name') %></th>
+    <th><%= link_to "Bib #", mushers_path(:order => 'bib') %></th>
+    <th><%= link_to "Start Pos.", mushers_path(:order => 'stpos') %></th>
+    <th>Num Dogs</th>
+    <th>Year</th>
+		<th>Restart Diff</th>
+    <th>Status</th>
+  </tr>
+
+<% @mushers.each do |musher| %>
+  <tr>
+    <td><%= link_to musher.name, edit_musher_path(musher) %></td>
+    <td align="center"><%= musher.bibnum %></td>
+    <td align="center"><%= musher.stpos %></td>
+    <td align="center"><%= musher.dogs %></td>
+    <td><%= musher.year %></td>
+		<td align="center"><%= musher.restartdiff %></td>
+    <td align="center"><%= musher.status.name %></td> 
+    <td><%= link_to(image_tag("/images/delete.jpg", {:alt => 'destroy', :class=>"rollover"}), {:controller => 'musher', :action => 'destroy', :id => musher }, :confirm => 'Are you sure?', :method => :delete) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to image_tag("/images/Add.png"), new_musher_path %>

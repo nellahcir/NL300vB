@@ -1,0 +1,24 @@
+<h1>Users</h1>
+<table border='0'>
+  <tr><td>Name</td><td>access level</td><td> </td><td> </td></tr>
+  <% for user in @all_users %>
+  
+    <tr><td><%= h(user.name) %></td><td align="center"><%= h(user.access_level) %></td>
+    <td><%= link_to(image_tag("/images/edit.png", {:alt => 'update', :class=>"rollover"}), { # link_to options
+                             :controller => 'login', 
+                             :action => 'edit_user',
+                             :id => user}) %>
+    <td><%= link_to(image_tag("/images/delete.jpg", {:alt => 'delete', :class=>"rollover"}), {
+                           :controller => 'login', 
+                           :action => 'delete_user',
+                           :id => user},
+                         { # html options
+                           :method  => :post,
+                           :confirm => "Really delete #{user.name}?"
+                         }) %> </td>
+ 
+   </td> </tr>  
+  <% end %>
+</table>
+
+<%= link_to(image_tag("/images/Add.png", {:alt => 'new', :class=>"rollover"}), {:controller => '', :action => 'add_user' }) %>

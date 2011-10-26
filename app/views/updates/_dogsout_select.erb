@@ -1,0 +1,6 @@
+Dogs OUT<br />
+<% if @dir == "out" %>
+	<%= text_field :update, :dogsout %>
+<% else %>
+	<%= text_field :update, :dogsout, :disabled => true %>
+<% end %>

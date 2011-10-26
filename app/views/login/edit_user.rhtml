@@ -1,0 +1,45 @@
+<div class="atisnmppoller-form">
+
+<% if session[:admin] == 'admin' %>
+
+  <%= error_messages_for 'user' %>
+
+  <fieldset>
+    <legend>Update User Details</legend>
+
+    <% form_for :user do |form| %>
+      <p>
+        <label for="user_name">Name:</label>
+        <%= h(@user.name) %>
+      </p>
+
+      <p>
+        <label for="user_password">Password:</label>
+        <%= form.password_field :password, :size => 40 %>
+      </p>
+
+      <p>
+        <label for="user_password_confirmation">Confirm:</label>
+        <%= form.password_field :password_confirmation, :size => 40 %>
+      </p>
+
+      <p>
+        <label for="user_name">email:</label>
+        <%= form.text_field :email, :size => 64 %>
+      </p>
+
+      <p>
+        <label for="user_access_level">Access Level:</label>
+        <%= form.radio_button(:access_level, "admin") %>Admin
+				<%= form.radio_button(:access_level, "user") %>User
+				<%= form.radio_button(:access_level, "view") %>View only
+      </p>      
+
+      <%= submit_tag "Upate User", :class => "submit" %>
+    
+    <% end %>  
+  </fieldset>
+<% else %>
+no access
+<% end %>
+</div>

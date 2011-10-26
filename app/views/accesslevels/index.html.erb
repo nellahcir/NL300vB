@@ -1,0 +1,18 @@
+<h1>Listing accesslevels</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @accesslevels.each do |accesslevel| %>
+  <tr>
+    <td><%= link_to 'Show', accesslevel %></td>
+    <td><%= link_to 'Edit', edit_accesslevel_path(accesslevel) %></td>
+    <td><%= link_to 'Destroy', accesslevel, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New accesslevel', new_accesslevel_path %>

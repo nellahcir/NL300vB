@@ -1,0 +1,42 @@
+<h1>All mushers</h1>
+<table border="1">
+	<tr>
+		<td></td>
+		<td align="center" colspan="2"><%=h @firstcp.name %></td>
+		<% @checkpoints.each do |cp| %>
+			<td align="center" colspan="4"><%=h cp.name %></td>
+		<% end %>
+		<td align="center" colspan="2"><%=h @lastcp.name %></td>
+		<td></td><td></td><td></td>
+	</tr>
+	<tr>
+		<td>Musher</td>
+		<td>Time<br/>Out</td><td>Dogs<br/>Out</td>
+		<% @checkpoints.each do |cp| %>
+			<td>Time<br/>In</td><td>Time<br/>Out</td><td>Dogs<br/>In</td><td>Dogs<br/>Out</td>
+		<% end %>
+		<td>Time<br/>In</td>
+		<td>Dogs<br/>In</td>
+		<td>RaceTime</td>
+		<td>RaceSpd</td>
+	</tr>
+
+<% @mushers.each do |musher| %>
+	<tr>
+		<td><%=h musher.name %></td>
+		<td><%=h stest @h["#{musher.name}#{@firstcp.name}TimeOUT"] 	%></td>
+		<td><%=h      @h["#{musher.name}#{@firstcp.name}DogsOUT"] 	%></td>
+		<% @checkpoints.each do |cp| %>
+			<td><%=h stest @h["#{musher.name}#{cp.name}TimeIN"] 	%></td>
+			<td><%=h stest @h["#{musher.name}#{cp.name}TimeOUT"] 	%></td>
+			<td><%=h @h["#{musher.name}#{cp.name}DogsIN"] 	%></td>
+			<td><%=h @h["#{musher.name}#{cp.name}DogsOUT"] 	%></td>
+		<% end %>
+		<td><%=h stest @h["#{musher.name}#{@lastcp.name}TimeIN"] 	%></td>
+		<td><%=h      @h["#{musher.name}#{@lastcp.name}DogsIN"] 	%></td>
+		<td><%=h  @runtimes["#{musher.name}"]    %></td>
+		<td><%=h show_speed3 @runtimes["#{musher.name}Spd"] %></td>
+	</tr>
+<% end %>
+</table>
+<p><%= link_to 'Current standings', standings_path %></p>

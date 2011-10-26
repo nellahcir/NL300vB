@@ -1,0 +1,1027 @@
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 16:46:45 -0800 2011
+DEPRECATION WARNING: Arel::Visitors::VISITORS is deprecated and will be removed. Database adapters should define a visitor_for method which returns the appropriate visitor for the database. For example, MysqlAdapter.visitor_for(pool) returns Arel::Visitors::MySQL.new(pool). (called from synchronize at /Users/hcir/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/monitor.rb:242)
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (3.4ms)
+Completed 200 OK in 24ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at Tue Oct 25 16:46:45 -0800 2011
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery.js"):
+  
+
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/javascripts/jquery_ujs.js" for 127.0.0.1 at Tue Oct 25 16:46:45 -0800 2011
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery_ujs.js"):
+  
+
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[36mSQL (345.1ms)[0m  [1mDROP DATABASE IF EXISTS `nl300_test`[0m
+  [1m[35mSQL (0.6ms)[0m  CREATE DATABASE `nl300_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (103.2ms)[0m  CREATE TABLE `checkins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `musher_id` int(11), `checkpoint_id` int(11), `dogs` int(11), `time` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (250.1ms)[0m  CREATE TABLE `checkouts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `musher_id` int(11), `checkpoint_id` int(11), `dogs` int(11), `time` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (121.4ms)[0m  CREATE TABLE `checkpoints` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sequence` int(11), `milepost` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (122.7ms)[0m  CREATE TABLE `mushers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `bibnum` int(11), `dogs` int(11), `year` int(11), `stpos` int(11), `status_id` int(11), `restartdiff` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (121.8ms)[0m  CREATE TABLE `standings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `a` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.7ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (109.3ms)[0m  CREATE TABLE `statuses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `proceed` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (110.6ms)[0m  CREATE TABLE `timedcps` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `checkpoint_id` int(11), `startInterval` int(11), `minMakeup` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (109.5ms)[0m  CREATE TABLE `updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `musher_id` int(11), `checkpoint_id` int(11), `timein` datetime, `dogsin` int(11), `timeout` datetime, `dogsout` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (110.6ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `access_level` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (109.6ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (119.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110111013634')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110108231556')
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110109055006')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110109061424')
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110109082521')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110109084353')
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110109103602')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110111012932')
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110111013004')[0m
+  [1m[36mSQL (8.0ms)[0m  [1mDROP DATABASE IF EXISTS `nl300_test`[0m
+  [1m[35mSQL (0.3ms)[0m  CREATE DATABASE `nl300_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.4ms)[0m  DROP DATABASE IF EXISTS `nl300_test`
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE DATABASE `nl300_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (55.7ms)[0m  [1mCREATE TABLE `checkins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `musher_id` int(11), `checkpoint_id` int(11), `dogs` int(11), `time` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (175.0ms)[0m  [1mCREATE TABLE `checkouts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `musher_id` int(11), `checkpoint_id` int(11), `dogs` int(11), `time` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (122.6ms)[0m  [1mCREATE TABLE `checkpoints` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sequence` int(11), `milepost` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (109.8ms)[0m  [1mCREATE TABLE `mushers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `bibnum` int(11), `dogs` int(11), `year` int(11), `stpos` int(11), `status_id` int(11), `restartdiff` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (109.9ms)[0m  [1mCREATE TABLE `standings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `a` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (111.5ms)[0m  [1mCREATE TABLE `statuses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `proceed` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (120.7ms)[0m  [1mCREATE TABLE `timedcps` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `checkpoint_id` int(11), `startInterval` int(11), `minMakeup` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (109.9ms)[0m  [1mCREATE TABLE `updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `musher_id` int(11), `checkpoint_id` int(11), `timein` datetime, `dogsin` int(11), `timeout` datetime, `dogsout` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (121.1ms)[0m  [1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `access_level` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mSQL (109.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW KEYS FROM `schema_migrations`
+  [1m[36mSQL (118.8ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110111013634')
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110108231556')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110109055006')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110109061424')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110109082521')
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110109084353')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110109103602')
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20110111012932')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110111013004')
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 17:45:31 -0800 2011
+  Processing by LoginController#login as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_login_login_html_erb___1063155903_2184946860_0 at /Users/hcir/srce/ror31/NL300vB/app/views/login/login.html.erb:5)
+Rendered login/login.html.erb within layouts/public (3.3ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/login" for 127.0.0.1 at Tue Oct 25 17:45:51 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"Gl8PrunPKeFxZOVlIXKd4jMWPA/ZeCU5K8VsWF466CY=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'admin' LIMIT 1
+Redirected to http://localhost:3000/login
+Completed 302 Found in 18ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Oct 25 17:45:51 -0800 2011
+  Processing by LoginController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (id = '765557111')
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557111)[0m
+Rendered layouts/_racename.html.erb (0.7ms)
+Rendered login/index.html.erb within layouts/admin (53.4ms)
+Completed 200 OK in 76ms (Views: 62.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/checkpoints" for 127.0.0.1 at Tue Oct 25 17:46:04 -0800 2011
+  Processing by CheckpointsController#index as HTML
+  [1m[35mCheckpoint Load (0.4ms)[0m  SELECT `checkpoints`.* FROM `checkpoints`
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557111)[0m
+Rendered layouts/_racename.html.erb (0.5ms)
+Rendered checkpoints/index.html.erb within layouts/admin (17.3ms)
+Completed 200 OK in 101ms (Views: 31.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/statuses" for 127.0.0.1 at Tue Oct 25 17:46:07 -0800 2011
+  Processing by StatusesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT `statuses`.* FROM `statuses`[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557111)
+Rendered layouts/_racename.html.erb (0.5ms)
+Rendered statuses/index.html.erb within layouts/admin (18.4ms)
+Completed 200 OK in 39ms (Views: 25.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/mushers" for 127.0.0.1 at Tue Oct 25 17:46:10 -0800 2011
+  Processing by MushersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35mStatus Load (0.3ms)[0m  SELECT `statuses`.* FROM `statuses`
+  [1m[36mMusher Load (0.5ms)[0m  [1mSELECT `mushers`.* FROM `mushers` ORDER BY name[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557111)
+  [1m[36mStatus Load (0.3ms)[0m  [1mSELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1
+Rendered layouts/_racename.html.erb (0.4ms)
+Rendered mushers/index.html.erb within layouts/admin (24.7ms)
+Completed 200 OK in 53ms (Views: 31.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/timedcps" for 127.0.0.1 at Tue Oct 25 17:46:13 -0800 2011
+  Processing by TimedcpsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35mTimedcp Load (17.4ms)[0m  SELECT `timedcps`.* FROM `timedcps`
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557111)[0m
+  [1m[35mCheckpoint Load (0.3ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 2 LIMIT 1
+Rendered layouts/_racename.html.erb (0.6ms)
+Rendered timedcps/index.html.erb within layouts/admin (88.8ms)
+Completed 200 OK in 129ms (Views: 98.3ms | ActiveRecord: 18.3ms)
+
+
+Started GET "/login/logout" for 127.0.0.1 at Tue Oct 25 17:46:18 -0800 2011
+  Processing by LoginController#logout as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (id = '765557111')
+Redirected to http://localhost:3000/login/login
+Completed 302 Found in 12ms
+
+
+Started GET "/login/login" for 127.0.0.1 at Tue Oct 25 17:46:18 -0800 2011
+  Processing by LoginController#login as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_login_login_html_erb___1063155903_2185404000_0 at /Users/hcir/srce/ror31/NL300vB/app/views/login/login.html.erb:5)
+Rendered login/login.html.erb within layouts/public (3.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login/login" for 127.0.0.1 at Tue Oct 25 17:48:10 -0800 2011
+
+ArgumentError (dump format error (user class)):
+  
+
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+DEPRECATION WARNING: require_library_or_gem is deprecated and will be removed from Rails 3.2. (called from require at script/rails:6)
+
+
+Started GET "/login/login" for 127.0.0.1 at Tue Oct 25 17:49:23 -0800 2011
+
+ArgumentError (dump format error (user class)):
+  
+
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 17:49:37 -0800 2011
+
+ArgumentError (dump format error (user class)):
+  
+
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 17:50:46 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (2.2ms)
+Completed 200 OK in 108723ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: require_library_or_gem is deprecated and will be removed from Rails 3.2. (called from require at script/rails:6)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 17:53:00 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (4.1ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/jquery_ujs.js" for 127.0.0.1 at Tue Oct 25 17:53:00 -0800 2011
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery_ujs.js"):
+  
+
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/jquery_ujs.js" for 127.0.0.1 at Tue Oct 25 17:53:01 -0800 2011
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jquery_ujs.js"):
+  
+
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+DEPRECATION WARNING: require_library_or_gem is deprecated and will be removed from Rails 3.2. (called from require at script/rails:6)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 17:55:15 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (4.0ms)
+Completed 200 OK in 18ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 17:55:37 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.4ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 17:56:50 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.2ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 17:57:27 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (3.3ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 17:58:35 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.0ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 18:01:57 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.1ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 18:03:53 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.0ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 18:04:03 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.0ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 18:05:12 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.0ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 18:08:32 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (3.3ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 18:10:57 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.4ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 18:11:06 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.4ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Oct 25 18:11:25 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.4ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/login" for 127.0.0.1 at Tue Oct 25 18:11:45 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"ZPyCkmpXYvEzMNJas4n3DnPOKLfG1B77ys8wv14ageI=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'admin' LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 39ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Oct 25 18:11:46 -0800 2011
+  Processing by LoginController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = '765557111')[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557111)
+Rendered login/index.html.erb within layouts/admin (4.0ms)
+Rendered layouts/_racename.html.erb (0.6ms)
+Completed 200 OK in 54ms (Views: 39.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/checkins" for 127.0.0.1 at Tue Oct 25 18:11:54 -0800 2011
+  Processing by CheckinsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35mMusher Load (0.3ms)[0m  SELECT `mushers`.* FROM `mushers` ORDER BY bibnum
+  [1m[36mCheckpoint Load (0.4ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` ORDER BY sequence[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557111)
+  [1m[36mCheckin Load (16.5ms)[0m  [1mSELECT `checkins`.* FROM `checkins` ORDER BY time DESC LIMIT 25 OFFSET 0[0m
+  [1m[35mMusher Load (0.4ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.3ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.5ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.4ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.5ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 2 LIMIT 1[0m
+  [1m[35mMusher Load (0.4ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 2 LIMIT 1
+  [1m[36mCheckpoint Load (0.3ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 1 LIMIT 1[0m
+Rendered checkins/index.html.erb within layouts/admin (83.5ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 216ms (Views: 73.6ms | ActiveRecord: 45.9ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at Tue Oct 25 18:11:58 -0800 2011
+  Processing by CheckoutsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1
+  [1m[36mMusher Load (0.3ms)[0m  [1mSELECT `mushers`.* FROM `mushers` ORDER BY bibnum[0m
+  [1m[35mCheckpoint Load (0.8ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` ORDER BY sequence
+  [1m[36mCheckout Load (1.3ms)[0m  [1mSELECT `checkouts`.* FROM `checkouts` [0m
+Completed 500 Internal Server Error in 110ms
+
+NoMethodError (undefined method `paginate' for #<Array:0x1030c0590>):
+  app/controllers/checkouts_controller.rb:18:in `index'
+
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/hcir/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.0ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at Tue Oct 25 18:14:16 -0800 2011
+  Processing by CheckoutsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1
+  [1m[36mMusher Load (0.8ms)[0m  [1mSELECT `mushers`.* FROM `mushers` ORDER BY bibnum[0m
+  [1m[35mCheckpoint Load (0.8ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` ORDER BY sequence
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557111)[0m
+  [1m[35mCheckout Load (0.6ms)[0m  SELECT `checkouts`.* FROM `checkouts` ORDER BY time DESC LIMIT 25 OFFSET 0
+  [1m[36mMusher Load (0.3ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1[0m
+  [1m[35mCheckpoint Load (0.3ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1[0m
+  [1m[35mCheckpoint Load (0.5ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1[0m
+  [1m[35mCheckpoint Load (0.4ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 2 LIMIT 1
+  [1m[36mMusher Load (0.4ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 2 LIMIT 1[0m
+  [1m[35mCheckpoint Load (0.3ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 1 LIMIT 1
+Rendered checkouts/index.html.erb within layouts/admin (38.9ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 153ms (Views: 49.7ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/checkins" for 127.0.0.1 at Tue Oct 25 18:14:35 -0800 2011
+  Processing by CheckinsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35mMusher Load (0.6ms)[0m  SELECT `mushers`.* FROM `mushers` ORDER BY bibnum
+  [1m[36mCheckpoint Load (0.4ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` ORDER BY sequence[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557111)
+  [1m[36mCheckin Load (0.8ms)[0m  [1mSELECT `checkins`.* FROM `checkins` ORDER BY time DESC LIMIT 25 OFFSET 0[0m
+  [1m[35mMusher Load (0.4ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.5ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.4ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.4ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.3ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 2 LIMIT 1[0m
+  [1m[35mMusher Load (0.3ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 2 LIMIT 1
+  [1m[36mCheckpoint Load (0.3ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 1 LIMIT 1[0m
+Rendered checkins/index.html.erb within layouts/admin (43.5ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 158ms (Views: 52.1ms | ActiveRecord: 15.3ms)
+
+
+Started GET "/checkpoints" for 127.0.0.1 at Tue Oct 25 18:14:38 -0800 2011
+  Processing by CheckpointsController#index as HTML
+  [1m[35mCheckpoint Load (0.4ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557111)[0m
+Rendered checkpoints/index.html.erb within layouts/admin (9.4ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 107ms (Views: 94.1ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/mushers" for 127.0.0.1 at Tue Oct 25 18:14:40 -0800 2011
+  Processing by MushersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1
+  [1m[36mStatus Load (0.3ms)[0m  [1mSELECT `statuses`.* FROM `statuses` [0m
+  [1m[35mMusher Load (0.3ms)[0m  SELECT `mushers`.* FROM `mushers` ORDER BY name
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557111)[0m
+  [1m[35mStatus Load (0.5ms)[0m  SELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1[0m
+Rendered mushers/index.html.erb within layouts/admin (16.4ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 30.1ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/timedcps" for 127.0.0.1 at Tue Oct 25 18:14:43 -0800 2011
+  Processing by TimedcpsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1
+  [1m[36mTimedcp Load (0.2ms)[0m  [1mSELECT `timedcps`.* FROM `timedcps` [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557111)
+  [1m[36mCheckpoint Load (0.3ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 2 LIMIT 1[0m
+Rendered timedcps/index.html.erb within layouts/admin (21.2ms)
+Rendered layouts/_racename.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 33.4ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/standings" for 127.0.0.1 at Tue Oct 25 18:14:47 -0800 2011
+  Processing by StandingsController#index as HTML
+  [1m[35mCheckpoint Load (0.4ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` 
+  [1m[36mStanding Load (0.4ms)[0m  [1mselect updated_at as lci from checkins where id = (select max(id) from checkins)[0m
+  [1m[35mStanding Load (0.6ms)[0m  select updated_at as lco from checkouts where id = (select max(id) from checkouts)
+  [1m[36mStanding Load (1.1ms)[0m  [1m select 
+ m.name AS Musher,
+ m.bibnum AS Bibnum,
+ c.name AS Checkpoint,
+ ci.dogs AS DogsIN,
+ ci.time AS TimeIN,
+ co.dogs AS DogsOUT,
+ co.time AS TimeOUT,
+ timediff(ci.time,(
+ select coinner.time AS time 
+ from checkouts coinner 
+ where ((coinner.musher_id = ci.musher_id) and (coinner.checkpoint_id = (ci.checkpoint_id - 1))))) AS RunTime,
+ timediff(co.time,ci.time) AS RestTime,
+ (select milepost from checkpoints where id = ci.checkpoint_id) / 
+ (time_to_sec(
+ timediff(ci.time,(
+ select coinner.time AS time 
+ from checkouts coinner 
+ where ((coinner.musher_id = ci.musher_id) and (coinner.checkpoint_id = (ci.checkpoint_id - 1))))) ) / 3600) as speed
+ from ((((checkins ci left join checkouts co on(((co.musher_id = ci.musher_id) and (co.checkpoint_id = ci.checkpoint_id)))) 
+ left join mushers m on((m.id = ci.musher_id))) 
+ left join checkpoints c on((c.id = ci.checkpoint_id))) 
+ left join checkins ci2 on(((ci.musher_id = ci2.musher_id) and (ci.checkpoint_id < ci2.checkpoint_id)))) 
+ where isnull(ci2.musher_id) 
+ group by ci.musher_id,co.musher_id 
+ order by c.sequence desc,isnull(co.time),co.time,ci.time
+[0m
+  [1m[35mStanding Load (0.8ms)[0m  SELECT `standings`.* FROM `standings` 
+  [1m[36mMusher Load (0.4ms)[0m  [1mselect count(*) as num from mushers as m left join statuses as s on s.id = m.status_id where s.proceed = true[0m
+  [1m[35mCheckpoint Load (0.3ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` ORDER BY `checkpoints`.`id` DESC LIMIT 1
+  [1m[36mMusher Load (0.2ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE (name = 'Buser Rohn')[0m
+  [1m[35mTimedcp Load (0.2ms)[0m  SELECT `timedcps`.* FROM `timedcps` 
+  [1m[36mCheckpoint Load (0.3ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE (name = 'Happy Trails (Finish)')[0m
+  [1m[35mCheckpoint Load (0.4ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE (id = '2')
+  [1m[36mStatus Load (0.3ms)[0m  [1mSELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1[0m
+  [1m[35mStanding Load (0.3ms)[0m  select status_id from mushers where id = 1
+  [1m[36mMusher Load (0.4ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE (name = 'Allen Rich')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `timedcps`.* FROM `timedcps` 
+  [1m[36mCheckpoint Load (0.3ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE (name = 'Happy Trails')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE (id = '2')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557111)
+Rendered standings/_formcheckpointsearch.erb (2.4ms)
+Rendered standings/_formstandings.erb (2.5ms)
+Rendered standings/index.erb within layouts/admin (8.2ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 228ms (Views: 30.8ms | ActiveRecord: 65.2ms)
+
+
+Started GET "/statuses" for 127.0.0.1 at Tue Oct 25 18:14:51 -0800 2011
+  Processing by StatusesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35mStatus Load (0.5ms)[0m  SELECT `statuses`.* FROM `statuses` 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557111)[0m
+Rendered statuses/index.html.erb within layouts/admin (8.0ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 108ms (Views: 23.4ms | ActiveRecord: 65.5ms)
+
+
+Started GET "/login/list_users" for 127.0.0.1 at Tue Oct 25 18:14:54 -0800 2011
+  Processing by LoginController#list_users as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557111)
+Rendered login/list_users.html.erb within layouts/admin (3.5ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 31ms (Views: 18.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/login/logout" for 127.0.0.1 at Tue Oct 25 18:14:57 -0800 2011
+  Processing by LoginController#logout as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (id = '765557111')
+Redirected to http://localhost:3000/login/login
+Completed 302 Found in 12ms
+
+
+Started GET "/login/login" for 127.0.0.1 at Tue Oct 25 18:14:57 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.1ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/login" for 127.0.0.1 at Tue Oct 25 18:16:12 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"hcir", "commit"=>"Login", "authenticity_token"=>"ZPyCkmpXYvEzMNJas4n3DnPOKLfG1B77ys8wv14ageI=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'hcir' LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 16ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Oct 25 18:16:12 -0800 2011
+  Processing by LoginController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557112 LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = '765557112')[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557112)
+Rendered login/index.html.erb within layouts/user (0.2ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 16.4ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/standings" for 127.0.0.1 at Tue Oct 25 18:16:17 -0800 2011
+  Processing by StandingsController#index as HTML
+  [1m[36mCheckpoint Load (0.4ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` [0m
+  [1m[35mStanding Load (0.4ms)[0m  select updated_at as lci from checkins where id = (select max(id) from checkins)
+  [1m[36mStanding Load (0.6ms)[0m  [1mselect updated_at as lco from checkouts where id = (select max(id) from checkouts)[0m
+  [1m[35mStanding Load (1.0ms)[0m   select 
+ m.name AS Musher,
+ m.bibnum AS Bibnum,
+ c.name AS Checkpoint,
+ ci.dogs AS DogsIN,
+ ci.time AS TimeIN,
+ co.dogs AS DogsOUT,
+ co.time AS TimeOUT,
+ timediff(ci.time,(
+ select coinner.time AS time 
+ from checkouts coinner 
+ where ((coinner.musher_id = ci.musher_id) and (coinner.checkpoint_id = (ci.checkpoint_id - 1))))) AS RunTime,
+ timediff(co.time,ci.time) AS RestTime,
+ (select milepost from checkpoints where id = ci.checkpoint_id) / 
+ (time_to_sec(
+ timediff(ci.time,(
+ select coinner.time AS time 
+ from checkouts coinner 
+ where ((coinner.musher_id = ci.musher_id) and (coinner.checkpoint_id = (ci.checkpoint_id - 1))))) ) / 3600) as speed
+ from ((((checkins ci left join checkouts co on(((co.musher_id = ci.musher_id) and (co.checkpoint_id = ci.checkpoint_id)))) 
+ left join mushers m on((m.id = ci.musher_id))) 
+ left join checkpoints c on((c.id = ci.checkpoint_id))) 
+ left join checkins ci2 on(((ci.musher_id = ci2.musher_id) and (ci.checkpoint_id < ci2.checkpoint_id)))) 
+ where isnull(ci2.musher_id) 
+ group by ci.musher_id,co.musher_id 
+ order by c.sequence desc,isnull(co.time),co.time,ci.time
+  [1m[36mStanding Load (0.8ms)[0m  [1mSELECT `standings`.* FROM `standings` [0m
+  [1m[35mMusher Load (0.4ms)[0m  select count(*) as num from mushers as m left join statuses as s on s.id = m.status_id where s.proceed = true
+  [1m[36mCheckpoint Load (0.4ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` ORDER BY `checkpoints`.`id` DESC LIMIT 1[0m
+  [1m[35mMusher Load (0.2ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE (name = 'Buser Rohn')
+  [1m[36mTimedcp Load (0.8ms)[0m  [1mSELECT `timedcps`.* FROM `timedcps` [0m
+  [1m[35mCheckpoint Load (0.3ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE (name = 'Happy Trails (Finish)')
+  [1m[36mCheckpoint Load (0.3ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE (id = '2')[0m
+  [1m[35mStatus Load (0.3ms)[0m  SELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1
+  [1m[36mStanding Load (0.5ms)[0m  [1mselect status_id from mushers where id = 1[0m
+  [1m[35mMusher Load (0.3ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE (name = 'Allen Rich')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `timedcps`.* FROM `timedcps` [0m
+  [1m[35mCheckpoint Load (0.2ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE (name = 'Happy Trails')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE (id = '2')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557112)[0m
+Rendered standings/_formcheckpointsearch.erb (1.8ms)
+Rendered standings/_formstandings.erb (1.5ms)
+Rendered standings/index.erb within layouts/user (5.5ms)
+Rendered layouts/_racename.html.erb (0.3ms)
+Completed 200 OK in 214ms (Views: 86.6ms | ActiveRecord: 59.7ms)
+
+
+Started GET "/mushers" for 127.0.0.1 at Tue Oct 25 18:16:21 -0800 2011
+  Processing by MushersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557112 LIMIT 1
+  [1m[36mStatus Load (0.4ms)[0m  [1mSELECT `statuses`.* FROM `statuses` [0m
+  [1m[35mMusher Load (0.3ms)[0m  SELECT `mushers`.* FROM `mushers` ORDER BY name
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557112)[0m
+  [1m[35mStatus Load (0.5ms)[0m  SELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1[0m
+Rendered mushers/index.html.erb within layouts/user (15.1ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 28.0ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/mushers/new" for 127.0.0.1 at Tue Oct 25 18:16:23 -0800 2011
+  Processing by MushersController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557112 LIMIT 1
+  [1m[36mStatus Load (0.8ms)[0m  [1mSELECT `statuses`.* FROM `statuses` [0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557112)
+Rendered mushers/_form.erb (5.0ms)
+Rendered mushers/new.html.erb within layouts/user (16.5ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 130ms (Views: 29.5ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/mushers/new" for 127.0.0.1 at Tue Oct 25 18:17:04 -0800 2011
+  Processing by MushersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557112 LIMIT 1[0m
+  [1m[35mStatus Load (0.6ms)[0m  SELECT `statuses`.* FROM `statuses` 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557112)[0m
+Rendered mushers/_form.erb (5.1ms)
+Rendered mushers/new.html.erb within layouts/user (16.8ms)
+Rendered layouts/_racename.html.erb (0.3ms)
+Completed 200 OK in 119ms (Views: 91.3ms | ActiveRecord: 9.5ms)
+
+
+Started POST "/mushers" for 127.0.0.1 at Tue Oct 25 18:17:30 -0800 2011
+  Processing by MushersController#create as HTML
+  Parameters: {"commit"=>"Create", "musher"=>{"restartdiff"=>"6", "name"=>"Allen Sue", "stpos"=>"3", "bibnum"=>"99", "dogs"=>"16", "year"=>"2012", "status_id"=>"7"}, "authenticity_token"=>"ZPyCkmpXYvEzMNJas4n3DnPOKLfG1B77ys8wv14ageI=", "utf8"=>"✓"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557112 LIMIT 1
+  [1m[36mStatus Load (0.9ms)[0m  [1mSELECT `statuses`.* FROM `statuses` [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSELECT 1 FROM `mushers` WHERE `mushers`.`stpos` = BINARY 3 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT 1 FROM `mushers` WHERE `mushers`.`name` = BINARY 'Allen Sue' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM `mushers` WHERE `mushers`.`bibnum` = BINARY 99 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `mushers` (`bibnum`, `created_at`, `dogs`, `name`, `restartdiff`, `status_id`, `stpos`, `updated_at`, `year`) VALUES (99, '2011-10-26 02:17:30', 16, 'Allen Sue', 6, 7, 3, '2011-10-26 02:17:30', 2012)
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/mushers
+Completed 302 Found in 76ms
+
+
+Started GET "/mushers" for 127.0.0.1 at Tue Oct 25 18:17:30 -0800 2011
+  Processing by MushersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557112 LIMIT 1
+  [1m[36mStatus Load (0.4ms)[0m  [1mSELECT `statuses`.* FROM `statuses` [0m
+  [1m[35mMusher Load (0.3ms)[0m  SELECT `mushers`.* FROM `mushers` ORDER BY name
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557112)[0m
+  [1m[35mStatus Load (0.4ms)[0m  SELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1
+Rendered mushers/index.html.erb within layouts/user (16.5ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 59ms (Views: 29.7ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/checkins" for 127.0.0.1 at Tue Oct 25 18:17:41 -0800 2011
+  Processing by CheckinsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557112 LIMIT 1[0m
+  [1m[35mMusher Load (0.4ms)[0m  SELECT `mushers`.* FROM `mushers` ORDER BY bibnum
+  [1m[36mCheckpoint Load (1.0ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` ORDER BY sequence[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557112)
+  [1m[36mCheckin Load (0.9ms)[0m  [1mSELECT `checkins`.* FROM `checkins` ORDER BY time DESC LIMIT 25 OFFSET 0[0m
+  [1m[35mMusher Load (0.5ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.3ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.4ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.3ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.3ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 2 LIMIT 1[0m
+  [1m[35mMusher Load (0.3ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 2 LIMIT 1
+  [1m[36mCheckpoint Load (0.2ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 1 LIMIT 1[0m
+Rendered checkins/index.html.erb within layouts/user (41.4ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 153ms (Views: 49.7ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/checkins/new" for 127.0.0.1 at Tue Oct 25 18:17:43 -0800 2011
+  Processing by CheckinsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557112 LIMIT 1
+  [1m[36mMusher Load (0.4ms)[0m  [1mSELECT `mushers`.* FROM `mushers` ORDER BY bibnum[0m
+  [1m[35mCheckpoint Load (0.4ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` ORDER BY sequence
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557112)[0m
+Rendered checkins/_form.erb (18.0ms)
+Rendered checkins/new.html.erb within layouts/user (28.2ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 142ms (Views: 39.8ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/checkins/new" for 127.0.0.1 at Tue Oct 25 18:21:03 -0800 2011
+  Processing by CheckinsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557112 LIMIT 1
+  [1m[36mMusher Load (0.4ms)[0m  [1mSELECT `mushers`.* FROM `mushers` ORDER BY bibnum[0m
+  [1m[35mCheckpoint Load (0.8ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` ORDER BY sequence
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557112)[0m
+Rendered checkins/_form.erb (17.7ms)
+Rendered checkins/new.html.erb within layouts/user (28.4ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 155ms (Views: 105.6ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at Tue Oct 25 18:21:11 -0800 2011
+  Processing by CheckoutsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557112 LIMIT 1
+  [1m[36mMusher Load (0.3ms)[0m  [1mSELECT `mushers`.* FROM `mushers` ORDER BY bibnum[0m
+  [1m[35mCheckpoint Load (0.4ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` ORDER BY sequence
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557112)[0m
+  [1m[35mCheckout Load (0.8ms)[0m  SELECT `checkouts`.* FROM `checkouts` ORDER BY time DESC LIMIT 25 OFFSET 0
+  [1m[36mMusher Load (0.5ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1[0m
+  [1m[35mCheckpoint Load (0.5ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1[0m
+  [1m[35mCheckpoint Load (0.5ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1[0m
+  [1m[35mCheckpoint Load (0.4ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 2 LIMIT 1
+  [1m[36mMusher Load (0.4ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 2 LIMIT 1[0m
+  [1m[35mCheckpoint Load (0.4ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 1 LIMIT 1
+Rendered checkouts/index.html.erb within layouts/user (40.2ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 151ms (Views: 47.8ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/checkouts/new" for 127.0.0.1 at Tue Oct 25 18:21:13 -0800 2011
+  Processing by CheckoutsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557112 LIMIT 1[0m
+  [1m[35mMusher Load (0.4ms)[0m  SELECT `mushers`.* FROM `mushers` ORDER BY bibnum
+  [1m[36mCheckpoint Load (0.4ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` ORDER BY sequence[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557112)
+Rendered checkouts/_form.erb (18.7ms)
+Rendered checkouts/new.html.erb within layouts/user (30.8ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 144ms (Views: 106.7ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/mushers" for 127.0.0.1 at Tue Oct 25 18:21:16 -0800 2011
+  Processing by MushersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557112 LIMIT 1[0m
+  [1m[35mStatus Load (0.8ms)[0m  SELECT `statuses`.* FROM `statuses` 
+  [1m[36mMusher Load (0.3ms)[0m  [1mSELECT `mushers`.* FROM `mushers` ORDER BY name[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557112)
+  [1m[36mStatus Load (0.4ms)[0m  [1mSELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1[0m
+Rendered mushers/index.html.erb within layouts/user (18.9ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 32.1ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/mushers/new" for 127.0.0.1 at Tue Oct 25 18:21:18 -0800 2011
+  Processing by MushersController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557112 LIMIT 1
+  [1m[36mStatus Load (0.4ms)[0m  [1mSELECT `statuses`.* FROM `statuses` [0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557112)
+Rendered mushers/_form.erb (4.4ms)
+Rendered mushers/new.html.erb within layouts/user (15.2ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 27.6ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/mushers" for 127.0.0.1 at Tue Oct 25 18:21:20 -0800 2011
+  Processing by MushersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557112 LIMIT 1[0m
+  [1m[35mStatus Load (0.7ms)[0m  SELECT `statuses`.* FROM `statuses` 
+  [1m[36mMusher Load (0.8ms)[0m  [1mSELECT `mushers`.* FROM `mushers` ORDER BY name[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557112)
+  [1m[36mStatus Load (0.4ms)[0m  [1mSELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `statuses`.* FROM `statuses` WHERE `statuses`.`id` = 7 LIMIT 1[0m
+Rendered mushers/index.html.erb within layouts/user (20.9ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 129ms (Views: 35.4ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/login/logout" for 127.0.0.1 at Tue Oct 25 18:21:22 -0800 2011
+  Processing by LoginController#logout as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557112 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = '765557112')[0m
+Redirected to http://localhost:3000/login/login
+Completed 302 Found in 12ms
+
+
+Started GET "/login/login" for 127.0.0.1 at Tue Oct 25 18:21:23 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.0ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/login" for 127.0.0.1 at Tue Oct 25 18:21:29 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"ZPyCkmpXYvEzMNJas4n3DnPOKLfG1B77ys8wv14ageI=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'admin' LIMIT 1
+Redirected to http://localhost:3000/login
+Completed 302 Found in 84ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Oct 25 18:21:30 -0800 2011
+  Processing by LoginController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (id = '765557111')
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557111)[0m
+Rendered login/index.html.erb within layouts/admin (0.3ms)
+Rendered layouts/_racename.html.erb (0.3ms)
+Completed 200 OK in 28ms (Views: 15.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/login/list_users" for 127.0.0.1 at Tue Oct 25 18:21:36 -0800 2011
+  Processing by LoginController#list_users as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557111)
+Rendered login/list_users.html.erb within layouts/admin (2.4ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 28ms (Views: 16.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/login/add_user" for 127.0.0.1 at Tue Oct 25 18:21:38 -0800 2011
+  Processing by LoginController#add_user as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557111)
+Rendered login/add_user.html.erb within layouts/admin (3.0ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 17.9ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/login/add_user" for 127.0.0.1 at Tue Oct 25 18:21:58 -0800 2011
+  Processing by LoginController#add_user as HTML
+  Parameters: {"commit"=>"Add User", "authenticity_token"=>"ZPyCkmpXYvEzMNJas4n3DnPOKLfG1B77ys8wv14ageI=", "utf8"=>"✓", "user"=>{"access_level"=>"user", "name"=>"sue", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"sue@nosnowkennels.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'sue' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`access_level`, `created_at`, `email`, `hashed_password`, `name`, `salt`, `updated_at`) VALUES ('user', '2011-10-26 02:21:58', 'sue@nosnowkennels.com', '41bf5bafe5bdcbfdbe5cfc090828762eea7a519d', 'sue', '21705970800.0968765237228043', '2011-10-26 02:21:58')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login/list_users
+Completed 302 Found in 21ms
+
+
+Started GET "/login/list_users" for 127.0.0.1 at Tue Oct 25 18:21:58 -0800 2011
+  Processing by LoginController#list_users as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557111)
+Rendered login/list_users.html.erb within layouts/admin (3.6ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 18.0ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/login/logout" for 127.0.0.1 at Tue Oct 25 18:22:03 -0800 2011
+  Processing by LoginController#logout as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (id = '765557111')
+Redirected to http://localhost:3000/login/login
+Completed 302 Found in 12ms
+
+
+Started GET "/login/login" for 127.0.0.1 at Tue Oct 25 18:22:03 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.1ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/login" for 127.0.0.1 at Tue Oct 25 18:24:49 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"ZPyCkmpXYvEzMNJas4n3DnPOKLfG1B77ys8wv14ageI=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'admin' LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 18ms
+
+
+Started GET "/login" for 127.0.0.1 at Tue Oct 25 18:24:49 -0800 2011
+  Processing by LoginController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = '765557111')[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557111)
+Rendered login/index.html.erb within layouts/admin (0.3ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 95ms (Views: 14.6ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Oct 25 18:27:27 -0800 2011
+  Processing by LoginController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (id = '765557111')
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557111)[0m
+Rendered login/index.html.erb within layouts/admin (0.3ms)
+Rendered layouts/_racename.html.erb (0.5ms)
+Completed 200 OK in 27ms (Views: 14.9ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Oct 25 18:28:31 -0800 2011
+  Processing by LoginController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = '765557111')[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557111)
+Rendered login/index.html.erb within layouts/admin (0.2ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 15.6ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/checkins" for 127.0.0.1 at Tue Oct 25 18:29:23 -0800 2011
+  Processing by CheckinsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35mMusher Load (0.4ms)[0m  SELECT `mushers`.* FROM `mushers` ORDER BY bibnum
+  [1m[36mCheckpoint Load (0.4ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` ORDER BY sequence[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557111)
+  [1m[36mCheckin Load (0.5ms)[0m  [1mSELECT `checkins`.* FROM `checkins` ORDER BY time DESC LIMIT 25 OFFSET 0[0m
+  [1m[35mMusher Load (0.4ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.5ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.5ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.4ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCheckpoint Load (0.4ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 2 LIMIT 1[0m
+  [1m[35mMusher Load (0.4ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 2 LIMIT 1
+  [1m[36mCheckpoint Load (0.4ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 1 LIMIT 1[0m
+Rendered checkins/index.html.erb within layouts/admin (42.8ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 153ms (Views: 113.7ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/checkins/new" for 127.0.0.1 at Tue Oct 25 18:29:30 -0800 2011
+  Processing by CheckinsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1
+  [1m[36mMusher Load (0.4ms)[0m  [1mSELECT `mushers`.* FROM `mushers` ORDER BY bibnum[0m
+  [1m[35mCheckpoint Load (0.4ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` ORDER BY sequence
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557111)[0m
+Rendered checkins/_form.erb (17.9ms)
+Rendered checkins/new.html.erb within layouts/admin (27.7ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 139ms (Views: 101.7ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/checkins" for 127.0.0.1 at Tue Oct 25 18:29:34 -0800 2011
+  Processing by CheckinsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1
+  [1m[36mMusher Load (0.3ms)[0m  [1mSELECT `mushers`.* FROM `mushers` ORDER BY bibnum[0m
+  [1m[35mCheckpoint Load (0.4ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` ORDER BY sequence
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557111)[0m
+  [1m[35mCheckin Load (0.5ms)[0m  SELECT `checkins`.* FROM `checkins` ORDER BY time DESC LIMIT 25 OFFSET 0
+  [1m[36mMusher Load (0.5ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1[0m
+  [1m[35mCheckpoint Load (0.5ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1[0m
+  [1m[35mCheckpoint Load (0.5ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1[0m
+  [1m[35mCheckpoint Load (0.4ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1[0m
+  [1m[35mCheckpoint Load (0.4ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 2 LIMIT 1
+  [1m[36mMusher Load (0.4ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 2 LIMIT 1[0m
+  [1m[35mCheckpoint Load (0.3ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mushers`.* FROM `mushers` WHERE `mushers`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `checkpoints`.* FROM `checkpoints` WHERE `checkpoints`.`id` = 1 LIMIT 1
+Rendered checkins/index.html.erb within layouts/admin (112.0ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 164ms (Views: 123.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/statuses" for 127.0.0.1 at Tue Oct 25 18:29:38 -0800 2011
+  Processing by StatusesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35mStatus Load (0.7ms)[0m  SELECT `statuses`.* FROM `statuses` 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557111)[0m
+Rendered statuses/index.html.erb within layouts/admin (8.3ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 42ms (Views: 23.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/login/list_users" for 127.0.0.1 at Tue Oct 25 18:29:45 -0800 2011
+  Processing by LoginController#list_users as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (id = 765557111)
+Rendered login/list_users.html.erb within layouts/admin (3.7ms)
+Rendered layouts/_racename.html.erb (0.2ms)
+Completed 200 OK in 247ms (Views: 19.8ms | ActiveRecord: 147.2ms)
+
+
+Started GET "/login/logout" for 127.0.0.1 at Tue Oct 25 18:41:08 -0800 2011
+  Processing by LoginController#logout as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 765557111 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (id = '765557111')
+Redirected to http://localhost:3000/login/login
+Completed 302 Found in 12ms
+
+
+Started GET "/login/login" for 127.0.0.1 at Tue Oct 25 18:41:08 -0800 2011
+  Processing by LoginController#login as HTML
+Rendered login/login.html.erb within layouts/public (1.0ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)

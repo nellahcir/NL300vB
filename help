@@ -1,0 +1,88 @@
+Script started on Mon Jul 11 21:52:39 2011
+mbp:~/srce/ror3/nl300$ scipr[K[K[Kript server
+Script started, output file is server
+mbp:~/srce/ror3/nl300$ script/server
+bash: script/server: No such file or directory
+mbp:~/srce/ror3/nl300$ 
+mbp:~/srce/ror3/nl300$ 
+mbp:~/srce/ror3/nl300$ 
+mbp:~/srce/ror3/nl300$ ls
+Gemfile			autotest		doc			script			tmp
+Gemfile.lock		config			help			seed.rb			todo.txt
+README.markdown		config.ru		lib			server			vendor
+Rakefile		console			log			spec			wt300.sql
+app			db			public			test			wt300_3before.sql
+mbp:~/srce/ror3/nl300$ l[K./server
+bash: ./server: Permission denied
+mbp:~/srce/ror3/nl300$ sudo ./server
+Password:
+sudo: ./server: command not found
+mbp:~/srce/ror3/nl300$ ls script
+rails
+mbp:~/srce/ror3/nl300$ rails start
+Error: Command not recognized
+Usage: rails COMMAND [ARGS]
+
+The most common rails commands are:
+ generate    Generate new code (short-cut alias: "g")
+ console     Start the Rails console (short-cut alias: "c")
+ server      Start the Rails server (short-cut alias: "s")
+ dbconsole   Start a console for the database specified in config/database.yml
+             (short-cut alias: "db")
+ new         Create a new Rails application. "rails new my_app" creates a
+             new application called MyApp in "./my_app"
+
+In addition to those, there are:
+ application  Generate the Rails application code
+ destroy      Undo code generated with "generate"
+ benchmarker  See how fast a piece of code runs
+ profiler     Get profile information from a piece of code
+ plugin       Install a plugin
+ runner       Run a piece of code in the application environment
+
+All commands can be run with -h for more information.
+mbp:~/srce/ror3/nl300$ rails server
+=> Booting WEBrick
+=> Rails 3.0.3 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-07-11 21:54:01] INFO  WEBrick 1.3.1
+[2011-07-11 21:54:01] INFO  ruby 1.8.7 (2011-02-18) [i686-darwin10]
+[2011-07-11 21:54:01] INFO  WEBrick::HTTPServer#start: pid=3293 port=3000
+
+
+Started GET "/" for 127.0.0.1 at Mon Jul 11 21:54:36 -0800 2011
+  Processing by LoginController#login as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_login_login_html_erb___1779676770_2176983760_0 at /Users/hcir/srce/ror3/nl300/app/views/login/login.html.erb:5)
+Rendered login/login.html.erb within layouts/public (3.0ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login/login" for 127.0.0.1 at Mon Jul 11 21:54:43 -0800 2011
+  Processing by LoginController#login as HTML
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"lc5dZIRHhwxX7+mlCB3ePzb5J8os5g6NiZC3uek4J6A=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[36mSQL (27.9ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`name` = 'admin') LIMIT 1
+Redirected to http://0.0.0.0:3000/login
+Completed 302 Found in 137ms
+
+
+Started GET "/login" for 127.0.0.1 at Mon Jul 11 21:54:43 -0800 2011
+  Processing by LoginController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 765557111) LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (id = '765557111')
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (id = 765557111)[0m
+Rendered layouts/_racename.html.erb (0.4ms)
+Rendered login/index.html.erb within layouts/admin (68.8ms)
+Completed 200 OK in 112ms (Views: 76.1ms | ActiveRecord: 29.5ms)
+^C[2011-07-11 21:54:48] INFO  going to shutdown ...
+[2011-07-11 21:54:49] INFO  WEBrick::HTTPServer#start done.
+Exiting
+mbp:~/srce/ror3/nl300$ exit
+exit
+
+Script done, output file is server
+mbp:~/srce/ror3/nl300$ exit
+exit
+
+Script done on Mon Jul 11 21:56:12 2011

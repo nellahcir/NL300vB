@@ -1,0 +1,2 @@
+module ComplexQueriesHelper
+end

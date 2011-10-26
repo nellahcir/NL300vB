@@ -1,0 +1,40 @@
+<div class="atisnmppoller-form">
+
+  <%= error_messages_for 'user' %>
+
+  <fieldset>
+    <legend>Enter User Details</legend>
+
+    <% form_for :user do |form| %>
+      <table>
+				<tr>
+					<td><label for="user_name">Name:</label></td>
+        	<td><%= form.text_field :name, :size => 40 %></td>
+				</tr>
+				<tr>
+        	<td><label for="user_password">Password:</label></td>
+        	<td><%= form.password_field :password, :size => 40 %></td>
+      	</tr>
+				<tr>
+        	<td><label for="user_password_confirmation">Confirm:</label></td>
+        	<td><%= form.password_field :password_confirmation, :size => 40 %></td>
+      	</tr>
+				<tr>
+        	<td><label for="user_name">email:</label></td>
+        	<td><%= form.text_field :email, :size => 64 %></td>
+      	</tr>
+			</table>
+			<table>
+				<tr>
+      		<td><label for="user_access_level">Access Level:</label></td>
+        	<td><%= form.radio_button(:access_level, "admin") %>Admin</td>
+					<td><%= form.radio_button(:access_level, "user") %>User</td>
+					<td><%= form.radio_button(:access_level, "view") %>View only</td>
+      	</tr>
+      </table>
+
+      <%= submit_tag "Add User", :class => "submit" %>
+    
+    <% end %>  
+  </fieldset>
+</div>

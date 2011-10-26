@@ -1,0 +1,31 @@
+<%= error_messages_for 'checkin' %>
+
+<!--[form:checkin]-->
+<table>
+  <!--
+	<tr>
+			<td><label for="checkin_musher_id">Musher</label></td>
+			<td><%= collection_select(:checkin, :musher_id, @mushers, :id, :name, :order => 'name')  %></td>
+	</tr>
+	-->
+	<tr>
+			<td><label for="checkin_bib">Bib#</label></td>
+			<td><%= collection_select(:checkin, :musher_id, @mushers, :id, :bibnum_with_name, :order => 'bibnum')  %></td>
+	</tr>
+	<tr>
+	  <td><label for="checkin_checkpoint_id">Checkpoint></td>
+	  <td><%= collection_select(:checkin, :checkpoint_id, @checkpoints, :id, :name, :order => 'name') %></td>
+	</tr>
+	
+	<tr>
+			<td><label for="checkin_dogs">Dogs</label></td>
+			<td><%= text_field 'checkin', 'dogs', :size => 5  %></td>
+	</tr>
+	<tr>
+			<td><label for="checkin_time">Time</label></td>
+			<td><%= datetime_select(:checkin, :time )  %></td>
+	</tr>
+
+	
+</table>
+<!--[eoform:checkin]-->

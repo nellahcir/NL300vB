@@ -1,0 +1,1 @@
+- warn if musher is leaving before they are allowed based on min rest time

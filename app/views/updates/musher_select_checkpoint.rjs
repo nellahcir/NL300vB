@@ -1,0 +1,7 @@
+page.replace_html "checkpoint_select", :partial => "update_select"
+
+page.replace_html "timeout", :partial => "timeout_select"
+page.replace_html "dogsout", :partial => "dogsout_select"
+
+page.replace_html "timein", :partial => "timein_select"
+page.replace_html "dogsin", :partial => "dogsin_select" 

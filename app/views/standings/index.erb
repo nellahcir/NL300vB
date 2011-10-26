@@ -1,0 +1,11 @@
+<h1>Current standings - 2011</h1> 
+<font size="-1">last updated: <%= @lastupdated %></font>
+
+<%= render :partial => "formcheckpointsearch" %>
+
+<%= render :partial => 'formstandings' %>
+
+<br />
+<% if session[:admin] == 'admin' or session[:admin] == 'user' %>
+	<%= link_to 'New checkin', new_checkin_path %> - <%= link_to 'New checkout', new_checkout_path %>
+<% end %>

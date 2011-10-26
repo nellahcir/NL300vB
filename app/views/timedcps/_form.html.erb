@@ -1,0 +1,25 @@
+<% form_for(@timedcp) do |f| %>
+  <%= f.error_messages %>
+
+  <table>
+		<tr>
+			<td><label for="timedcp_checkpoint_id">Checkpoint</td>
+	  	<td><%= collection_select(:timedcp, :checkpoint_id, @checkpoints, :id, :name, :order => 'name') %></td>
+		</tr>
+		<tr>
+			<td><label for="timedcp_startInterval">Start_Interval</td>
+			<td><%= text_field 'timedcp', 'startInterval', :size => "3" %> <i>minutes</i></td>
+		</tr>
+		<tr>
+			<td><label for="timedcp_minMakeup">Min Makeup Time</td>
+			<td><%= text_field 'timedcp', 'minMakeup', :size => "5" %> <i>minutes</i></td>
+		</tr>
+		
+		<tr>
+			<td><label for="timedcp_starttime">Start Time</td>
+			<td><%= datetime_select(:timedcp, :starttime )  %></td>
+		</tr>
+	</table>
+    <%= f.submit 'Update' %>
+<% end %>
+<p>

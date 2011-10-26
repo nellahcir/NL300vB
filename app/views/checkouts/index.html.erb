@@ -1,0 +1,39 @@
+<h1>Listing checkouts</h1>
+
+<% form_tag checkouts_path, :method => 'get' do %>
+	<p>
+			<%= text_field_tag :search, params[:search] %>
+			<%= submit_tag "Search_Bib#{}", :musher => nil %>
+	</p>
+<% end %>
+
+<% if session[:admin] == 'admin' or session[:admin] == 'user' %>
+	<p><%= link_to image_tag("/images/Add.png"), new_checkout_path %></p>
+<% end %>
+
+<table border="0">
+  <tr>
+    <th>Musher</th>
+    <th>Bib#</th>
+    <th>Checkpoint</th>
+    <th>Dogs</th>
+    <th>Time</th>
+  </tr>
+
+<% @checkouts.each do |checkout| %>
+  <tr>
+    <td><%=h checkout.musher.name %></td>
+    <td align="center"><%=h checkout.musher.bibnum %></td> 
+    <td><%=h checkout.checkpoint.name %></td>
+    <td align="center"><%=h checkout.dogs %></td>
+    <td><%=h show_date checkout.time %></td>
+		<% if session[:admin] == 'admin' or session[:admin] == 'user' %>
+    	<td><%= link_to(image_tag("/images/edit.png", {:alt => 'edit', :class=>"rollover"}), {:controller => 'checkouts', :action => 'edit', :id => checkout }) %></td>    
+    	<td><%= link_to(image_tag("/images/delete.jpg", {:alt => 'destroy', :class=>"rollover"}), {:controller => 'checkouts', :action => 'destroy', :id => checkout }, :confirm => 'Are you sure?', :method => :delete) %></td>
+			<% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%= will_paginate @checkouts %>

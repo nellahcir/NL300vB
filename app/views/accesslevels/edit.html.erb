@@ -1,0 +1,11 @@
+<h1>Editing accesslevel</h1>
+
+<%= form_for(@accesslevel) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to image_tag("/images/up.png"), accesslevels_path %>

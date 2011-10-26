@@ -1,0 +1,30 @@
+<h1>Listing Settings</h1>
+
+<table>
+	<tr>
+		<th>Checkpoint</th>
+		<th>Start interval</th>
+		<th>Min rest at makeup</th>
+	</tr>
+
+<% @timedcps.each do |timedcp| %>
+	<tr>
+  	<td><%=h timedcp.checkpoint.name %></td>
+		<td align="center"><%=h timedcp.startInterval %></td>
+		<td align="center"><%=h timedcp.minMakeup %></td>
+
+    <td><%= link_to(image_tag("/images/edit.png", {:alt => 'edit', :class=>"rollover"}), {:controller => 'timedcp', :action => 'edit', :id => timedcp }) %></td>    
+    <td><%= link_to(image_tag("/images/delete.jpg", {:alt => 'destroy', :class=>"rollover"}), {:controller => 'timedcp', :action => 'destroy', :id => timedcp }, :confirm => 'Are you sure?', :method => :delete) %></td>
+  </tr>
+	<tr><td></td></tr>
+	<tr><td></td></tr>
+	<tr>
+		<td>Start Time: <%=h timedcp.starttime %></td>
+	</tr>
+<% end %>
+</table>
+
+<br />
+<% if @timedcps.length == 0 %>
+	<%= link_to 'New timedcp', new_timedcp_path %>
+<% end %>

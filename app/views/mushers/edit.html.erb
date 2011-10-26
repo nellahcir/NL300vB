@@ -1,0 +1,11 @@
+<h1>Editing musher</h1>
+
+<%= form_for(@musher) do |f| %>
+  <%= f.error_messages %>
+    <%= render :partial => 'form' %>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to image_tag("/images/up.png"), mushers_path %>

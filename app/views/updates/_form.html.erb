@@ -1,0 +1,43 @@
+<%= form_for(@update) do |f| %>
+  <% if @update.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@update.errors.count, "error") %> prohibited this update from being saved:</h2>
+
+      <ul>
+      <% @update.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+	<div class="field">
+	  Musher<br />
+		<%= collection_select(:update, :musher_id, @mushers, :id, :name, :order => 'bibnum')  %>
+	</div>
+	<div id="checkpoint_select" class="field">
+	  Checkpoint<br />
+		<%= observe_field :update_musher_id, :url => 'musher_select_checkpoint', :with=>"update_musher_id" %>
+		<%= collection_select(:update, :checkpoint_id, @checkpoints, :id, :name, :order => 'sequence') %>
+	</div>
+	<div id="timein" class="field">
+	  Time IN<br />
+	  <%= f.datetime_select  :timein %>
+	</div>
+	<div id="dogsin" class="field">
+	  Dogs IN<br />
+	  <%= f.text_field  :dogsin  %>
+	</div>
+	<div id="timeout" class="field">
+	  Time OUT<br />
+		<%= f.datetime_select  :timeout   %>
+	</div>
+	<div id="dogsout" class="field">
+	  Dogs OUT<br />
+	  <%= f.text_field  :dogsout %>
+	</div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,25 @@
+<div class="field">
+  Musher<br />
+	<%= collection_select(:update, :musher_id, @mushers, :id, :name, :order => 'bibnum')  %>
+</div>
+<div id="checkpoint_select" class="field">
+  Checkpoint<br />
+	<%= observe_field :update_musher_id, :url => 'musher_select_checkpoint', :with=>"update_musher_id" %>
+	<%= collection_select(:update, :checkpoint_id, @checkpoints, :id, :name, :order => 'sequence') %>
+</div>
+<div id="timein" class="field">
+  Time IN<br />
+  <%= datetime_select  :timein %>
+</div>
+<div id="dogsin" class="field">
+  Dogs IN<br />
+  <%= text_field  :dogsin  %>
+</div>
+<div id="timeout" class="field">
+  Time OUT<br />
+	<%= datetime_select  :timeout   %>
+</div>
+<div id="dogsout" class="field">
+  Dogs OUT<br />
+  <%= text_field  :dogsout %>
+</div>

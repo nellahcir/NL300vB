@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin</title>
+  <%= stylesheet_link_tag  "basic", :media => "all" %>
+  <%= javascript_include_tag :defaults %>
+</head>
+<body id="admin">
+  <div id="banner">
+		<%= render :partial => 'layouts/racename' %>
+  </div>
+<div id="columns">
+    <div id="side">
+      <p>
+				<%= link_to "Check_ins",    :controller => 'checkins',      :action => 'index' %><br/>
+        <%= link_to "Check_outs",   :controller => 'checkouts',     :action => 'index' %><br/>
+				<%= link_to "Checkpoints",  :controller => 'checkpoints',   :action => 'index' %><br/>
+				<%= link_to "Mushers",      :controller => 'mushers',       :action => 'index' %><br/>
+				<%= link_to "Settings",	  	:controller => 'timedcps',   		:action => 'index' %><br/>
+				<%= link_to "Standings",    :controller => 'standings',     :action => 'index' %><br/>
+				<%= link_to "Statuses",    	:controller => 'statuses',      :action => 'index' %><br/>
+        <%= link_to "Users",        :controller => 'login',         :action => 'list_users' %><br/>
+      </p>
+       <p>
+        <%= link_to "Logout",     :controller => 'login', :action => 'logout' %><br />
+      </p>
+    </div>
+    <div id="main" style="scroll;">
+    <% if flash[:notice] -%>
+      <div id="notice"><%= flash[:notice] %></div>
+    <% end -%>
+      <%= yield :layout %>
+    </div>
+  </div>
+</body>
+</html>

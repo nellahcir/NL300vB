@@ -1,0 +1,6 @@
+Time IN<br />
+<% if @dir == "in" %>
+	<%= datetime_select :update, :timein %>
+<% else %>
+	<%= datetime_select :update, :timein, :disabled => true %>
+<% end %>

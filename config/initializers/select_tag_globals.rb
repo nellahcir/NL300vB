@@ -1,0 +1,1 @@
+TRUE_FALSE = { 'True'=>true, 'False'=>false }
